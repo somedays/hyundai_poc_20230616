@@ -33,6 +33,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 		<link rel="stylesheet" media="screen, print" href="css/your_styles.css">-->
 
         <link rel="stylesheet" media="screen, print" href="css/datagrid/datatables/datatables.bundle.css">
+        <link rel="stylesheet" media="screen, print" href="css/notifications/sweetalert2/sweetalert2.bundle.css">
 
     </head>
     <!-- BEGIN Body -->
@@ -1518,6 +1519,8 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
         <script src="js/app.bundle.js"></script>
         <!--This page contains the basic JS and CSS files to get started on your project. If you need aditional addon's or plugins please see scripts located at the bottom of each page in order to find out which JS/CSS files to add.-->
         <script src="js/datagrid/datatables/datatables.bundle.js"></script>
+        <script src="js/notifications/sweetalert2/sweetalert2.bundle.js"></script>
+
         <script>
             /* demo scripts for change table color */
             /* change background */
@@ -1585,44 +1588,77 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                             text: '<i class="fal fa-search mr-1"></i> Search',
                             name: 'search',
                             className: 'btn-primary btn-sm mr-1'
-                        },
-                        {
+                        },{
                             text: '<i class="fal fa-file-excel mr-1"></i> Excel',
                             name: 'excel',
                             className: 'btn-primary btn-sm mr-1'
-                        },
-                        
-                        {
+                        },{
                             text: '<i class="fal fa-edit mr-1"></i> Edit',
                             name: 'edit',
-                            className: 'btn-success btn-sm mr-1'
-                        },
-                        {
+                            className: 'btn-success btn-sm mr-1',
+                            action: function ( e, dt, node, config ) {
+                            }
+                        },{
                             text: '<i class="fal fa-times mr-1"></i> Delete',
                             name: 'delete',
-                            className: 'btn-success btn-sm mr-1'
-                        },
-                        {
+                            className: 'btn-success btn-sm mr-1',
+                            action: function ( e, dt, node, config ) {
+                                
+                                Swal.fire({
+                                   title: 'Are you sure want to remove?',
+                                   text: 'Data will be permanatly deleted',
+                                   icon: 'warning',
+                                   
+                                   showCancelButton: true, // cancel버튼 보이기. 기본은 원래 없음
+                                   confirmButtonText: 'Delete', // confirm 버튼 텍스트 지정
+                                   cancelButtonText: 'Cancel', // cancel 버튼 텍스트 지정
+                                   
+                                   reverseButtons: true, // 버튼 순서 거꾸로
+                                   
+                                }).then(result => {
+                                   // 만약 Promise리턴을 받으면,
+                                   if (result.isConfirmed) { // 만약 모달창에서 confirm 버튼을 눌렀다면
+                                   
+                                      Swal.fire('Success.', '', 'success');
+                                   }
+                                });
+
+
+
+
+                            }
+                        },{
                             text: '<i class="fal fa-plus mr-1"></i> Submit',
                             name: 'submit',
-                            className: 'btn-success btn-sm mr-1'
+                            className: 'btn-success btn-sm mr-1',
+                            action: function ( e, dt, node, config ) {
+                                
+                                Swal.fire({
+                                   title: 'Do you want to proceed?',
+                                   text: '',
+                                   icon: 'warning',
+                                   
+                                   showCancelButton: true, // cancel버튼 보이기. 기본은 원래 없음
+                                   confirmButtonText: 'Submit', // confirm 버튼 텍스트 지정
+                                   cancelButtonText: 'Cancel', // cancel 버튼 텍스트 지정
+                                   
+                                   reverseButtons: true, // 버튼 순서 거꾸로
+                                   
+                                }).then(result => {
+                                   // 만약 Promise리턴을 받으면,
+                                   if (result.isConfirmed) { // 만약 모달창에서 confirm 버튼을 눌렀다면
+                                   
+                                      Swal.fire('Success.', '', 'success');
+                                   }
+                                });
+
+
+
+
+                            }
                         }
 
                     ]
-                });
-
-                $('.js-thead-colors a').on('click', function()
-                {
-                    var theadColor = $(this).attr("data-bg");
-                    console.log(theadColor);
-                    $('#dt-basic-example thead').removeClassPrefix('bg-').addClass(theadColor);
-                });
-
-                $('.js-tbody-colors a').on('click', function()
-                {
-                    var theadColor = $(this).attr("data-bg");
-                    console.log(theadColor);
-                    $('#dt-basic-example').removeClassPrefix('bg-').addClass(theadColor);
                 });
 
             });
