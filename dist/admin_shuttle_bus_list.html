@@ -169,19 +169,9 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 						TIP: The menu items are not auto translated. You must have a residing lang file associated with the menu saved inside dist/media/data with reference to each 'data-i18n' attribute.
 						-->
                         <ul id="js-nav-menu" class="nav-menu">
-                            <li class="active">
-                                <a href="suggest_request_list.html" title="Request List" data-filter-tags="Request List">
-                                    <i class="fal fa-list"></i>
-                                    <span class="nav-link-text" data-i18n="nav.blankpage">Request List</span>
-                                </a>
-                            </li>
 
-                            <li class="">
-                                <a href="suggest_approval_management.html" title="Blank Project" data-filter-tags="Approval Management">
-                                    <i class="fal fa-check"></i>
-                                    <span class="nav-link-text" data-i18n="nav.blankpage">My Approval</span>
-                                </a>
-                            </li>
+                            <script src="js/js-nav-menu.js"></script>
+
                         </ul>
                         <div class="filter-message js-filter-message bg-success-600"></div>
                     </nav>
@@ -324,16 +314,18 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                     <!-- BEGIN Page Content -->
                     <!-- the #js-page-content id is needed for some plugins to initialize -->
                     <main id="js-page-content" role="main" class="page-content">
+
                         <ol class="breadcrumb page-breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0);">Operational Car</a></li>
-                            <li class="breadcrumb-item active">Request List</li>
-                            <!-- <li class="breadcrumb-item">Sub-category</li>
-                            <li class="breadcrumb-item active">Page Title</li> -->
+                            <!-- <li class="breadcrumb-item"><a href="javascript:void(0);"></a></li> -->
+                            <li class="breadcrumb-item">Approval Management</li>
+                            <li class="breadcrumb-item">Transport & Travel</li>
+                            <li class="breadcrumb-item active">Shuttle Bus</li>
                             <!-- <li class="position-absolute pos-top pos-right d-none d-sm-block"><span class="js-get-date"></span></li> -->
                         </ol>
+
                         <div class="subheader">
                             <h1 class="subheader-title">
-                                <i class='subheader-icon fal fa-list'></i> Request List  
+                                <i class='subheader-icon fal fa-list'></i> Shuttle Bus
                                 <!-- <small>
                                     Insert page description or punch line
                                 </small> -->
@@ -1531,9 +1523,12 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 						+ src/../jquery-snippets.js (core) -->
         <script src="js/vendors.bundle.js"></script>
         <script src="js/app.bundle.js"></script>
+        <script src="js/common.js"></script>
         <!--This page contains the basic JS and CSS files to get started on your project. If you need aditional addon's or plugins please see scripts located at the bottom of each page in order to find out which JS/CSS files to add.-->
         <script src="js/datagrid/datatables/datatables.bundle.js"></script>
         <script src="js/notifications/sweetalert2/sweetalert2.bundle.js"></script>
+
+        
 
 
         <script>
@@ -1543,6 +1538,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 
             $(document).ready(function(){
 
+                loadMenuActive('admin_shuttle_bus_list');
 
                 $('#btn_save').on('click', function(){
 
@@ -1620,13 +1616,6 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                             className: 'btn-primary btn-sm mr-1'
                         },
                         {
-                            text: '<i class="fal fa-save mr-1"></i> Register',
-                            name: 'regist',
-                            className: 'btn-success btn-sm mr-1',
-                            action: function ( e, dt, node, config ) {
-                                $('#default-example-modal-lg').modal('show');
-                            }
-                        },{
                             text: '<i class="fal fa-edit mr-1"></i> Edit',
                             name: 'edit',
                             className: 'btn-success btn-sm mr-1',
@@ -1635,18 +1624,48 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                             }
                         },
                         {
-                            text: '<i class="fal fa-times mr-1"></i> Delete',
-                            name: 'delete',
+                            text: '<i class="fal fa-save mr-1"></i> Approved',
+                            name: 'approved',
                             className: 'btn-success btn-sm mr-1',
                             action: function ( e, dt, node, config ) {
                                 
                                 Swal.fire({
-                                   title: 'Are you sure want to remove?',
-                                   text: 'Data will be permanatly deleted',
+                                   title: 'Are you sure want to approve?',
+                                   text: '',
                                    icon: 'warning',
                                    
                                    showCancelButton: true, // cancel버튼 보이기. 기본은 원래 없음
-                                   confirmButtonText: 'Delete', // confirm 버튼 텍스트 지정
+                                   confirmButtonText: 'Approve', // confirm 버튼 텍스트 지정
+                                   cancelButtonText: 'Cancel', // cancel 버튼 텍스트 지정
+                                   
+                                   reverseButtons: true, // 버튼 순서 거꾸로
+                                   
+                                }).then(result => {
+                                   // 만약 Promise리턴을 받으면,
+                                   // if (result.isConfirmed) { // 만약 모달창에서 confirm 버튼을 눌렀다면
+                                   
+                                      Swal.fire('Success.', '', 'primary');
+                                   // }
+                                });
+
+
+
+
+                            }
+                        },
+                        {
+                            text: '<i class="fal fa-times mr-1"></i> Reject',
+                            name: 'reject',
+                            className: 'btn-success btn-sm mr-1',
+                            action: function ( e, dt, node, config ) {
+                                
+                                Swal.fire({
+                                   title: 'Are you sure want to reject?',
+                                   text: '',
+                                   icon: 'warning',
+                                   
+                                   showCancelButton: true, // cancel버튼 보이기. 기본은 원래 없음
+                                   confirmButtonText: 'Reject', // confirm 버튼 텍스트 지정
                                    cancelButtonText: 'Cancel', // cancel 버튼 텍스트 지정
                                    
                                    reverseButtons: true, // 버튼 순서 거꾸로
@@ -1664,36 +1683,6 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 
                             }
                         },
-                        {
-                            text: '<i class="fal fa-plus mr-1"></i> Submit',
-                            name: 'submit',
-                            className: 'btn-success btn-sm mr-1',
-                            action: function ( e, dt, node, config ) {
-                                
-                                Swal.fire({
-                                   title: 'Do you want to proceed?',
-                                   text: '',
-                                   icon: 'warning',
-                                   
-                                   showCancelButton: true, // cancel버튼 보이기. 기본은 원래 없음
-                                   confirmButtonText: 'Submit', // confirm 버튼 텍스트 지정
-                                   cancelButtonText: 'Cancel', // cancel 버튼 텍스트 지정
-                                   
-                                   reverseButtons: true, // 버튼 순서 거꾸로
-                                   
-                                }).then(result => {
-                                   // 만약 Promise리턴을 받으면,
-                                   //if (result.isConfirmed) { // 만약 모달창에서 confirm 버튼을 눌렀다면
-                                   
-                                      Swal.fire('Success.', '', 'success');
-                                   //}
-                                });
-
-
-
-
-                            }
-                        }
 
                     ]
                 });
