@@ -1134,6 +1134,8 @@ RESULT:
 
 .datepicker {
   width: 265px;
-  padding: 10px; }
+  padding: 10px; 
+  z-index: 9999 !important;
+}
 
 /*# sourceMappingURL=bootstrap-datepicker.css.map */

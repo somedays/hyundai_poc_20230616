@@ -10,7 +10,7 @@ document.write('                <span class="nav-link-text" data-i18n="nav.font_
 document.write('            </a>');
 document.write('            <ul>');
 document.write('                <li id="user_uniform_list" class="active">');
-document.write('                    <a href="uniofrm_list.html" title="Uniform" >');
+document.write('                    <a href="uniform_list.html" title="Uniform" >');
 document.write('                        <span class="nav-link-text" data-i18n="nav.font_icons_fontawesome_light">Uniform</span>');
 document.write('                    </a>');
 document.write('                </li>');

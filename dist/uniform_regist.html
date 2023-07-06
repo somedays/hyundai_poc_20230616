@@ -341,112 +341,193 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 
                             
                             <div class="col-xl-12">
-                                <div id="panel-1" class="panel">
+
+                                <div class="panel">
                                     <div class="panel-hdr">
                                         <h2>
-                                            Application List </span>
+                                            Requester <span class="fw-300"><i> </i></span>
                                         </h2>
-                                        <div class="panel-toolbar">
-                                            <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
-                                            <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
-                                            <!-- <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button> -->
-                                        </div>
                                     </div>
                                     <div class="panel-container show">
-                                        <div class="panel-content">
-                                            
-                                            <div class="d-flex align-items-end">
-                                                <!-- <button type="button" class="btn btn-secondary waves-effect waves-themed" data-toggle="popover" data-container="#test-container" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="Popover title">Display popover</button> -->
 
-                                                <!-- <button type="button" class="btn btn-sm btn-primary ml-auto waves-effect waves-themed ml-1" >
-                                                    <i class="fal fa-search"></i> Search </button> -->
+                                        <div class="panel-content p-0">
+                                            <form class="needs-validation" novalidate>
+                                                <div class="panel-content">
+                                                    <div class="form-row">
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">NIK</label>
+                                                            <input type="text" id="simpleinput" class="form-control" placeholder="62200147">
+                                                        </div>
 
-                                                <!-- <button type="button" class="btn btn-sm btn-primary waves-effect waves-themed ml-1" >
-                                                    <i class="fal fa-file-excel"></i> Excel </button> -->
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">Name</label>
 
-                                            </div>
+                                                            <div class="input-group input-group-sm bg-white shadow-inset-2">
+                                                                <div class="input-group-prepend">
+                                                                    <span class="input-group-text bg-transparent border-right-0 py-1 px-3 text-success">
+                                                                        <i class="fal fa-search"></i>
+                                                                    </span>
+                                                                </div>
+                                                                <input type="text" class="form-control border-left-0 bg-transparent pl-0" placeholder="Daniel">
+                                                                <div class="input-group-append">
+                                                                    <button class="btn btn-default" type="button">Search</button>
+                                                                </div>
+                                                            </div>
 
-                                            <hr>
+                                                        </div>
 
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">Position</label>
+                                                            <input type="text" id="simpleinput" class="form-control" placeholder="Sr. Spec">
+                                                        </div>
+                                                    </div>
 
-                                            <table id="dt-basic-example" class="table table-bordered table-hover table-striped w-100">
-                                                <thead>
-                                                    <tr>
-                                                        <th>#</th>
-                                                        <th>NO</th>
-                                                        <th>ID Number</th>
-                                                        <th>Name</th>
-                                                        <th>Position</th>
-                                                        <th>Dept. Name</th>
-                                                        <th>Group Name</th>
-                                                        <th>App type</th>
-                                                        <th>Working Area</th>
-                                                        <th>Purpose</th>
-                                                        <th>Process Status</th>
-                                                        <th>Application Date</th>
-                                                        <th>Time Departure</th>
-                                                        <th>Time Arrival</th>
-                                                        <th>Applicator Name</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td><input type="checkbox"></td>
-                                                        <td>1</td>
-                                                        <td>62200147</td>
-                                                        <td>Daniel</td>
-                                                        <td>Sr. Spec</td>
-                                                        <td>BS</td>
-                                                        <td>Business Administrator</td>
-                                                        <td>Operational Car</td>
-                                                        <td>HMMI Factory</td>
-                                                        <td>Vendor Visit</td>
-                                                        <td>Waiting</td>
-                                                        <td>2019/04/02</td>
-                                                        <td>09:00</td>
-                                                        <td>13:00</td>
-                                                        <td>Daniel</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input type="checkbox"></td>
-                                                        <td>2</td>
-                                                        <td>62200147</td>
-                                                        <td>Daniel</td>
-                                                        <td>Sr. Spec</td>
-                                                        <td>BS</td>
-                                                        <td>Business Administrator</td>
-                                                        <td>Operational Car</td>
-                                                        <td>HMMI Factory</td>
-                                                        <td>Vendor Visit</td>
-                                                        <td>Waiting</td>
-                                                        <td>2019/04/02</td>
-                                                        <td>09:00</td>
-                                                        <td>13:00</td>
-                                                        <td>Daniel</td>
-                                                    </tr>
-                                                   
-                                                    
-                                                </tbody>
-                                                <!-- <tfoot>
-                                                    <tr>
-                                                        <th>Name</th>
-                                                        <th>Position</th>
-                                                        <th>Office</th>
-                                                        <th>Age</th>
-                                                        <th>Start date</th>
-                                                        <th>Salary</th>
-                                                    </tr>
-                                                </tfoot> -->
-                                            </table>
-                                            <!-- datatable end -->
+                                                    <div class="form-row">
+
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">Group</label>
+                                                            <input type="text" id="simpleinput" class="form-control" placeholder="Business Administration">
+                                                        </div>
 
 
+                                                    </div>
+
+                                                </div>
+                                            </form>
+                                        </div>
 
 
+                                    </div>
+                                </div>
+
+                                
+                                <div class="panel">
+                                    <div class="panel-hdr">
+                                        <h2>
+                                            Uniform <span class="fw-300"><i> </i></span>
+                                        </h2>
+                                    </div>
+                                    <div class="panel-container show">
+
+                                        <div class="panel-content p-0">
+                                            <form class="needs-validation" novalidate>
+                                                <div class="panel-content">
+                                                    <div class="form-row">
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">Regional Division</label>
+                                                            <select class="form-control" id="example-select">
+                                                                <option>Head Office</option>
+                                                                <option>HMMI Factory</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">App Type</label>
+                                                            <select class="form-control" id="example-select">
+                                                                <option>New joiner uniform</option>
+                                                                <option>Renewal</option>
+                                                                <option>Lost / Broken</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">Division</label>
+                                                            <select class="form-control" id="example-select">
+                                                                <option>MT</option>
+                                                                <option>TT</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-row">
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">Type</label>
+                                                            <select class="form-control" id="example-select">
+                                                                <option>T-Shirt</option>
+                                                                <option>Jacket</option>
+                                                                <option>Pants</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">Color</label>
+                                                            <select class="form-control" id="example-select">
+                                                                <option>White</option>
+                                                                <option>Red</option>
+                                                                <option>Purple</option>
+                                                                <option>Yellow</option>
+                                                                <option>Green</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">Application Size</label>
+                                                            <select class="form-control" id="example-select">
+                                                                <option>S(47CM)</option>
+                                                                <option>M(50CM)</option>
+                                                                <option>L(53CM)</option>
+                                                                <option>XL(56CM)</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-row">
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">Application Qty</label>
+                                                            <input type="number" id="simpleinput" class="form-control" placeholder="1">
+                                                        </div>
+
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">Process Status</label>
+                                                            <input type="number" id="simpleinput" class="form-control" placeholder="">
+                                                        </div>
+
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">Application Date</label>
+                                                            <input class="form-control" id="example-date" type="date" name="date" value="2023-07-23">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-row">
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">Applicator ID No.</label>
+                                                            <input type="number" id="simpleinput" class="form-control" placeholder="62200147">
+                                                        </div>
+
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">Applicator Name</label>
+                                                            <input type="number" id="simpleinput" class="form-control" placeholder="Daniel">
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="form-row">
+                                                        <div class="col-md-12 mb-3">
+                                                            <label class="form-label" for="example-textarea">Comment</label>
+                                                        <textarea class="form-control" id="example-textarea" rows="5"></textarea>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="form-row">
+                                                        <div class="col-md-12 mb-3">
+                                                            <label class="form-label">File (Browser)</label>
+                                                            <div class="custom-file">
+                                                                <input type="file" class="custom-file-input" id="customFile">
+                                                                <label class="custom-file-label" for="customFile">Choose file</label>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                        <div class="panel-content border-faded border-left-0 border-right-0 border-bottom-0 d-flex flex-row">
+                                            <button class="btn btn-primary ml-auto waves-effect waves-themed" type="submit">Submit form</button>
                                         </div>
 
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </main>
