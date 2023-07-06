@@ -315,15 +315,15 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                     <!-- the #js-page-content id is needed for some plugins to initialize -->
                     <main id="js-page-content" role="main" class="page-content">
                         <ol class="breadcrumb page-breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0);">Uniform</a></li>
-                            <li class="breadcrumb-item active">Approval Management</li>
-                            <!-- <li class="breadcrumb-item">Sub-category</li>
-                            <li class="breadcrumb-item active">Page Title</li> -->
+                            <!-- <li class="breadcrumb-item"><a href="javascript:void(0);"></a></li> -->
+                            <li class="breadcrumb-item">Request List</li>
+                            <li class="breadcrumb-item">Facility</li>
+                            <li class="breadcrumb-item active">Uniform</li>
                             <!-- <li class="position-absolute pos-top pos-right d-none d-sm-block"><span class="js-get-date"></span></li> -->
                         </ol>
                         <div class="subheader">
                             <h1 class="subheader-title">
-                                <i class='subheader-icon fal fa-list'></i> Request List  
+                                <i class='subheader-icon fal fa-list'></i> Uniform
                                 <!-- <small>
                                     Insert page description or punch line
                                 </small> -->
@@ -1526,7 +1526,6 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
         <script src="js/datagrid/datatables/datatables.bundle.js"></script>
         <script src="js/notifications/sweetalert2/sweetalert2.bundle.js"></script>
 
-        
 
 
         <script>
@@ -1536,7 +1535,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 
             $(document).ready(function(){
 
-                loadMenuActive('admin_visitor_entry_system');
+                loadMenuActive('user_uniform_list');
 
                 $('#btn_save').on('click', function(){
 
@@ -1614,6 +1613,23 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                             className: 'btn-primary btn-sm mr-1'
                         },
                         {
+                            text: '<i class="fal fa-save mr-1"></i> Register1',
+                           name: 'regist',
+                            className: 'btn-success btn-sm mr-1',
+                            action: function ( e, dt, node, config ) {
+                                $('#default-example-modal-lg').modal('show');
+                                // document.location.href = "uniform_regist.html";
+                            }
+                        },
+                        {
+                            text: '<i class="fal fa-save mr-1"></i> Register2',
+                            name: 'regist',
+                            className: 'btn-success btn-sm mr-1',
+                            action: function ( e, dt, node, config ) {
+                                // $('#default-example-modal-lg').modal('show');
+                                document.location.href = "uniform_regist.html";
+                            }
+                        },{
                             text: '<i class="fal fa-edit mr-1"></i> Edit',
                             name: 'edit',
                             className: 'btn-success btn-sm mr-1',
@@ -1622,48 +1638,18 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                             }
                         },
                         {
-                            text: '<i class="fal fa-save mr-1"></i> Approved',
-                            name: 'approved',
+                            text: '<i class="fal fa-times mr-1"></i> Delete',
+                            name: 'delete',
                             className: 'btn-success btn-sm mr-1',
                             action: function ( e, dt, node, config ) {
                                 
                                 Swal.fire({
-                                   title: 'Are you sure want to approve?',
-                                   text: '',
+                                   title: 'Are you sure want to remove?',
+                                   text: 'Data will be permanatly deleted',
                                    icon: 'warning',
                                    
                                    showCancelButton: true, // cancel버튼 보이기. 기본은 원래 없음
-                                   confirmButtonText: 'Approve', // confirm 버튼 텍스트 지정
-                                   cancelButtonText: 'Cancel', // cancel 버튼 텍스트 지정
-                                   
-                                   reverseButtons: true, // 버튼 순서 거꾸로
-                                   
-                                }).then(result => {
-                                   // 만약 Promise리턴을 받으면,
-                                   // if (result.isConfirmed) { // 만약 모달창에서 confirm 버튼을 눌렀다면
-                                   
-                                      Swal.fire('Success.', '', 'primary');
-                                   // }
-                                });
-
-
-
-
-                            }
-                        },
-                        {
-                            text: '<i class="fal fa-times mr-1"></i> Reject',
-                            name: 'reject',
-                            className: 'btn-success btn-sm mr-1',
-                            action: function ( e, dt, node, config ) {
-                                
-                                Swal.fire({
-                                   title: 'Are you sure want to reject?',
-                                   text: '',
-                                   icon: 'warning',
-                                   
-                                   showCancelButton: true, // cancel버튼 보이기. 기본은 원래 없음
-                                   confirmButtonText: 'Reject', // confirm 버튼 텍스트 지정
+                                   confirmButtonText: 'Delete', // confirm 버튼 텍스트 지정
                                    cancelButtonText: 'Cancel', // cancel 버튼 텍스트 지정
                                    
                                    reverseButtons: true, // 버튼 순서 거꾸로
@@ -1681,9 +1667,38 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 
                             }
                         },
+                        {
+                            text: '<i class="fal fa-plus mr-1"></i> Submit',
+                            name: 'submit',
+                            className: 'btn-success btn-sm mr-1',
+                            action: function ( e, dt, node, config ) {
+                                
+                                Swal.fire({
+                                   title: 'Do you want to proceed?',
+                                   text: '',
+                                   icon: 'warning',
+                                   
+                                   showCancelButton: true, // cancel버튼 보이기. 기본은 원래 없음
+                                   confirmButtonText: 'Submit', // confirm 버튼 텍스트 지정
+                                   cancelButtonText: 'Cancel', // cancel 버튼 텍스트 지정
+                                   
+                                   reverseButtons: true, // 버튼 순서 거꾸로
+                                   
+                                }).then(result => {
+                                   // 만약 Promise리턴을 받으면,
+                                   //if (result.isConfirmed) { // 만약 모달창에서 confirm 버튼을 눌렀다면
+                                   
+                                      Swal.fire('Success.', '', 'success');
+                                   //}
+                                });
+
+
+
+
+                            }
+                        }
 
                     ]
-
                 });
 
             });

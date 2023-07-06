@@ -61,7 +61,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 
 		>>> more settings are described inside documentation page >>>
 	-->
-    <body class="mod-bg-1 nav-function-top ">
+    <body class="mod-skin-light nav-function-top ">
         <!-- DOC: script to save and load page settings -->
         <script>
             /**
@@ -318,12 +318,12 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                             <!-- <li class="breadcrumb-item"><a href="javascript:void(0);"></a></li> -->
                             <li class="breadcrumb-item">Request List</li>
                             <li class="breadcrumb-item">Facility</li>
-                            <li class="breadcrumb-item active">Uniform</li>
+                            <li class="breadcrumb-item active">Uniform Regist</li>
                             <!-- <li class="position-absolute pos-top pos-right d-none d-sm-block"><span class="js-get-date"></span></li> -->
                         </ol>
                         <div class="subheader">
                             <h1 class="subheader-title">
-                                <i class='subheader-icon fal fa-list'></i> Uniform
+                                <i class='subheader-icon fal fa-list'></i> Uniform Regist
                                 <!-- <small>
                                     Insert page description or punch line
                                 </small> -->
@@ -1617,7 +1617,8 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                             name: 'regist',
                             className: 'btn-success btn-sm mr-1',
                             action: function ( e, dt, node, config ) {
-                                $('#default-example-modal-lg').modal('show');
+                                // $('#default-example-modal-lg').modal('show');
+                                document.location.href = "uniform_regist.html";
                             }
                         },{
                             text: '<i class="fal fa-edit mr-1"></i> Edit',
