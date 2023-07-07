@@ -41,8 +41,8 @@ document.write('                    <a href="vehicle_management_list.html" title
 document.write('                        <span class="nav-link-text" data-i18n="nav.font_icons_nextgen_icons_general">Vehicle Management</span>');
 document.write('                    </a>');
 document.write('                </li>');
-document.write('                <li> id="user_shuttle_list"');
-document.write('                    <a href="shuttle_list.html" title="Shuttle" >');
+document.write('                <li> id="user_shuttle_bus_list"');
+document.write('                    <a href="shuttle_bus_list.html" title="Shuttle" >');
 document.write('                        <span class="nav-link-text" data-i18n="nav.font_icons_nextgen_icons_general">Shuttle</span>');
 document.write('                    </a>');
 document.write('                </li>');
@@ -120,8 +120,8 @@ document.write('                    <a href="admin_vehicle_management_list.html"
 document.write('                        <span class="nav-link-text" data-i18n="nav.font_icons_nextgen_icons_general">Vehicle Management</span>');
 document.write('                    </a>');
 document.write('                </li>');
-document.write('                <li id="admin_shuttle_list">');
-document.write('                    <a href="admin_shuttle_list.html" title="Shuttle" >');
+document.write('                <li id="admin_shuttle_bus_list">');
+document.write('                    <a href="admin_shuttle_bus_list.html" title="Shuttle" >');
 document.write('                        <span class="nav-link-text" data-i18n="nav.font_icons_nextgen_icons_general">Shuttle</span>');
 document.write('                    </a>');
 document.write('                </li>');

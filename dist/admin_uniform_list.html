@@ -927,6 +927,13 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 
                     ]
                 });
+                
+                // 더블클릭시 edit modal 오픈
+                $('#dt-basic-example').on('dblclick', 'tr', function () {
+                  // let name = $('td', this).eq(1).text();
+                    $('#default-example-modal-lg').modal('show');
+                });
+
 
             });
 
