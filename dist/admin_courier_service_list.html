@@ -311,6 +311,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                             <table id="dt-basic-example" class="table table-bordered table-hover table-striped w-100">
                                                 <thead>
                                                     <tr>
+
                                                         <th>#</th>
                                                         <th>NO</th>
                                                         <th>ID Number</th>
@@ -318,14 +319,12 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                         <th>Position</th>
                                                         <th>Dept. Name</th>
                                                         <th>Group Name</th>
-                                                        <th>App type</th>
-                                                        <th>Working Area</th>
-                                                        <th>Purpose</th>
-                                                        <th>Process Status</th>
-                                                        <th>Application Date</th>
-                                                        <th>Time Departure</th>
-                                                        <th>Time Arrival</th>
-                                                        <th>Applicator Name</th>
+
+                                                        <th>Application detail</th>
+                                                        <th>Type Post</th>
+                                                        <th>Date</th>
+                                                        <th>Area</th>
+                                                        <th>Status</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -337,14 +336,12 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                         <td>Sr. Spec</td>
                                                         <td>BS</td>
                                                         <td>Business Administrator</td>
-                                                        <td>Operational Car</td>
-                                                        <td>HMMI Factory</td>
-                                                        <td>Vendor Visit</td>
-                                                        <td>Waiting</td>
+
+                                                        <td>Domestic</td>
+                                                        <td>JNE</td>
                                                         <td>2019/04/02</td>
-                                                        <td>09:00</td>
-                                                        <td>13:00</td>
-                                                        <td>Daniel</td>
+                                                        <td>Assembly</td>
+                                                        <td>In approval</td>
                                                     </tr>
                                                     <tr>
                                                         <td><input type="checkbox"></td>
@@ -354,14 +351,28 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                         <td>Sr. Spec</td>
                                                         <td>BS</td>
                                                         <td>Business Administrator</td>
-                                                        <td>Operational Car</td>
-                                                        <td>HMMI Factory</td>
-                                                        <td>Vendor Visit</td>
-                                                        <td>Waiting</td>
+
+                                                        <td>Domestic</td>
+                                                        <td>JNE</td>
                                                         <td>2019/04/02</td>
-                                                        <td>09:00</td>
-                                                        <td>13:00</td>
+                                                        <td>Assembly</td>
+                                                        <td>Approved</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><input type="checkbox"></td>
+                                                        <td>3</td>
+                                                        <td>62200147</td>
                                                         <td>Daniel</td>
+                                                        <td>Sr. Spec</td>
+                                                        <td>BS</td>
+                                                        <td>Business Administrator</td>
+
+                                                        <td>Domestic</td>
+                                                        <td>FEDEX</td>
+                                                        <td>2019/04/02</td>
+                                                        <td>Assembly</td>
+                                                        <td>Approved</td>
                                                     </tr>
                                                    
                                                     
@@ -552,7 +563,9 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                 <div class="panel-content">
 
                                                     <div class="panel-tag">
-                                                        Be sure to use an appropriate type attribute on all inputs (e.g., code <code>email</code> for email address or <code>number</code> for numerical information) to take advantage of newer input controls like email verification, number selection, and more.
+                                                        Registrartion Information of courier<p>
+                                                        Approval that already approved by HOD, can upload this system<p>
+                                                        <span><strong>Weight:__________</strong></span> <span><strong> Dimension:___________</strong></span>
                                                     </div>
 
                                                     <div class="form-row">
@@ -870,9 +883,6 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                    // }
                                 });
 
-
-
-
                             }
                         },
                         {
@@ -907,6 +917,12 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                         },
 
                     ]
+                });
+                
+                // 더블클릭시 edit modal 오픈
+                $('#dt-basic-example').on('dblclick', 'tr', function () {
+                    // let name = $('td', this).eq(1).text();
+                    $('#default-example-modal-lg').modal('show');
                 });
 
             });
