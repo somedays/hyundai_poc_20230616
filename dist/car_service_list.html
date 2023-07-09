@@ -255,13 +255,13 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                             <!-- <li class="breadcrumb-item"><a href="javascript:void(0);"></a></li> -->
                             <li class="breadcrumb-item">Request List</li>
                             <li class="breadcrumb-item">Transport & Travel</li>
-                            <li class="breadcrumb-item active">Vehicle Management</li>
+                            <li class="breadcrumb-item active">Car Service</li>
                             <!-- <li class="position-absolute pos-top pos-right d-none d-sm-block"><span class="js-get-date"></span></li> -->
                         </ol>
 
                         <div class="subheader">
                             <h1 class="subheader-title">
-                                <i class='subheader-icon fal fa-list'></i> Vehicle Management
+                                <i class='subheader-icon fal fa-list'></i> Car Service
                                 <!-- <small>
                                     Insert page description or punch line
                                 </small> -->
@@ -318,13 +318,13 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                         <th>Dept. Name</th>
                                                         <th>Group Name</th>
                                                         <th>App type</th>
-                                                        <th>Working Area</th>
-                                                        <th>Purpose</th>
-                                                        <th>Process Status</th>
-                                                        <th>Application Date</th>
-                                                        <th>Time Departure</th>
-                                                        <th>Time Arrival</th>
-                                                        <th>Applicator Name</th>
+
+                                                        <th>Vehicle No.</th>
+                                                        <th>Vehicle Type</th>
+                                                        <th>Date</th>
+
+                                                        <th>Status Request</th>
+                                                        <th>Registration Date</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -336,14 +336,13 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                         <td>Sr. Spec</td>
                                                         <td>BS</td>
                                                         <td>Business Administrator</td>
-                                                        <td>Operational Car</td>
-                                                        <td>HMMI Factory</td>
-                                                        <td>Vendor Visit</td>
-                                                        <td>Waiting</td>
+                                                        <td>Car Service</td>
+ 
+                                                        <td>Vehicle No.</td>
+                                                        <td>Vehicle Type</td>
                                                         <td>2019/04/02</td>
-                                                        <td>09:00</td>
-                                                        <td>13:00</td>
-                                                        <td>Daniel</td>
+                                                        <td>In Approval</td>
+                                                        <td>30-10-2022</td>
                                                     </tr>
                                                     <tr>
                                                         <td><input type="checkbox"></td>
@@ -353,14 +352,13 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                         <td>Sr. Spec</td>
                                                         <td>BS</td>
                                                         <td>Business Administrator</td>
-                                                        <td>Operational Car</td>
-                                                        <td>HMMI Factory</td>
-                                                        <td>Vendor Visit</td>
-                                                        <td>Waiting</td>
+                                                        <td>Car Service</td>
+ 
+                                                        <td>Vehicle No.</td>
+                                                        <td>Vehicle Type</td>
                                                         <td>2019/04/02</td>
-                                                        <td>09:00</td>
-                                                        <td>13:00</td>
-                                                        <td>Daniel</td>
+                                                        <td>In Approval</td>
+                                                        <td>30-10-2022</td>
                                                     </tr>
                                                    
                                                     
@@ -802,7 +800,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 
             $(document).ready(function(){
 
-                loadMenuActive('user_vehicle_management_list');
+                loadMenuActive('user_car_service_list');
 
                 $('#btn_save').on('click', function(){
 

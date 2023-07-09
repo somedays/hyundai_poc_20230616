@@ -62,7 +62,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 		>>> more settings are described inside documentation page >>>
 	-->
     <body class="mod-skin-light nav-function-top ">
-        
+
         <!-- BEGIN Page Wrapper -->
         <div class="page-wrapper">
             <div class="page-inner">
@@ -86,7 +86,6 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                 </a>
                             </div>
                         </div>
-
                         <div class="info-card">
                             <img src="img/demo/avatars/avatar-admin.png" class="profile-image rounded-circle" alt="Dr. Codex Lantern">
                             <div class="info-card-text">
@@ -102,7 +101,6 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                 <i class="fal fa-angle-down"></i>
                             </a>
                         </div>
-
                         <!-- 
 						TIP: The menu items are not auto translated. You must have a residing lang file associated with the menu saved inside dist/media/data with reference to each 'data-i18n' attribute.
 						-->
@@ -114,7 +112,6 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                         <div class="filter-message js-filter-message bg-success-600"></div>
                     </nav>
                     <!-- END PRIMARY NAVIGATION -->
-
                     <!-- NAV FOOTER -->
                     <div class="nav-footer shadow-top">
                         <a href="#" onclick="return false;" data-action="toggle" data-class="nav-function-minify" class="hidden-md-down">
@@ -139,7 +136,6 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                             </li>
                         </ul>
                     </div> <!-- END NAV FOOTER -->
-
                 </aside>
                 <!-- END Left Aside -->
                 <div class="page-content-wrapper">
@@ -254,18 +250,16 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                     <!-- BEGIN Page Content -->
                     <!-- the #js-page-content id is needed for some plugins to initialize -->
                     <main id="js-page-content" role="main" class="page-content">
-
                         <ol class="breadcrumb page-breadcrumb">
                             <!-- <li class="breadcrumb-item"><a href="javascript:void(0);"></a></li> -->
                             <li class="breadcrumb-item">Request List</li>
-                            <li class="breadcrumb-item">Canteen</li>
-                            <li class="breadcrumb-item active">Meal Request </li>
+                            <li class="breadcrumb-item">Facility</li>
+                            <li class="breadcrumb-item active">ID Card Regist</li>
                             <!-- <li class="position-absolute pos-top pos-right d-none d-sm-block"><span class="js-get-date"></span></li> -->
                         </ol>
-
                         <div class="subheader">
                             <h1 class="subheader-title">
-                                <i class='subheader-icon fal fa-list'></i> Meal Request
+                                <i class='subheader-icon fal fa-list'></i> ID Card Regist
                                 <!-- <small>
                                     Insert page description or punch line
                                 </small> -->
@@ -283,113 +277,133 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 
                             
                             <div class="col-xl-12">
-                                <div id="panel-1" class="panel">
+
+                                <div class="panel">
                                     <div class="panel-hdr">
                                         <h2>
-                                            Application List </span>
+                                            Requester <span class="fw-300"><i> </i></span>
                                         </h2>
-                                        <div class="panel-toolbar">
-                                            <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
-                                            <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
-                                            <!-- <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button> -->
-                                        </div>
                                     </div>
                                     <div class="panel-container show">
-                                        <div class="panel-content">
-                                            
-                                            <div class="d-flex align-items-end">
-                                                <!-- <button type="button" class="btn btn-secondary waves-effect waves-themed" data-toggle="popover" data-container="#test-container" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="Popover title">Display popover</button> -->
 
-                                                <!-- <button type="button" class="btn btn-sm btn-primary ml-auto waves-effect waves-themed ml-1" >
-                                                    <i class="fal fa-search"></i> Search </button> -->
+                                        <div class="panel-content p-0">
+                                            <form class="needs-validation" novalidate>
+                                                <div class="panel-content">
+                                                    <div class="form-row">
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">NIK</label>
+                                                            <input type="text" id="simpleinput" class="form-control" placeholder="62200147">
+                                                        </div>
 
-                                                <!-- <button type="button" class="btn btn-sm btn-primary waves-effect waves-themed ml-1" >
-                                                    <i class="fal fa-file-excel"></i> Excel </button> -->
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">Name</label>
 
-                                            </div>
+                                                            <div class="input-group input-group-sm bg-white shadow-inset-2">
+                                                                <div class="input-group-prepend">
+                                                                    <span class="input-group-text bg-transparent border-right-0 py-1 px-3 text-success">
+                                                                        <i class="fal fa-search"></i>
+                                                                    </span>
+                                                                </div>
+                                                                <input type="text" class="form-control border-left-0 bg-transparent pl-0" placeholder="Daniel">
+                                                                <div class="input-group-append">
+                                                                    <button class="btn btn-default" type="button">Search</button>
+                                                                </div>
+                                                            </div>
 
-                                            <hr>
+                                                        </div>
 
-
-                                            <table id="dt-basic-example" class="table table-bordered table-hover table-striped w-100">
-                                                <thead>
-                                                    <tr>
-                                                        <th>#</th>
-                                                        <th>NO</th>
-                                                        <th>ID Number</th>
-                                                        <th>Name</th>
-                                                        <th>Position</th>
-                                                        <th>Dept. Name</th>
-                                                        <th>Group Name</th>
-                                                        <th>App type</th>
-
-                                                        <th>Total persons</th>
-                                                        <th>Date</th>
-                                                        <th>Time</th>
-
-                                                        <th>Status Request</th>
-                                                        <th>Registration Date</th>
-
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td><input type="checkbox"></td>
-                                                        <td>1</td>
-                                                        <td>62200147</td>
-                                                        <td>Daniel</td>
-                                                        <td>Sr. Spec</td>
-                                                        <td>BS</td>
-                                                        <td>Business Administrator</td>
-                                                        <td>Meal Request</td>
-
-                                                        <td>Reason Text xxx</td>
-                                                        <td>2019/04/02</td>
-                                                        <td>09:00</td>
-
-                                                        <td>In Approval</td>
-                                                        <td>30-10-2022</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input type="checkbox"></td>
-                                                        <td>2</td>
-                                                        <td>62200147</td>
-                                                        <td>Daniel</td>
-                                                        <td>Sr. Spec</td>
-                                                        <td>BS</td>
-                                                        <td>Business Administrator</td>
-                                                        <td>Meal Request</td>
-
-                                                        <td>Reason Text xxx</td>
-                                                        <td>2019/04/02</td>
-                                                        <td>09:00</td>
                                                         
-                                                        <td>In Approval</td>
-                                                        <td>30-10-2022</td>
-                                                    </tr>
-                                                   
-                                                    
-                                                </tbody>
-                                                <!-- <tfoot>
-                                                    <tr>
-                                                        <th>Name</th>
-                                                        <th>Position</th>
-                                                        <th>Office</th>
-                                                        <th>Age</th>
-                                                        <th>Start date</th>
-                                                        <th>Salary</th>
-                                                    </tr>
-                                                </tfoot> -->
-                                            </table>
-                                            <!-- datatable end -->
+                                                    </div>
+
+                                                    <div class="form-row">
+
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">Position</label>
+                                                            <input type="text" id="simpleinput" class="form-control" placeholder="Sr. Spec">
+                                                        </div>
+
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">Department</label>
+                                                            <input type="text" id="simpleinput" class="form-control" placeholder="Business Supporting">
+                                                        </div>
+
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">Group</label>
+                                                            <input type="text" id="simpleinput" class="form-control" placeholder="Business Administration">
+                                                        </div>
 
 
+                                                    </div>
+
+                                                </div>
+                                            </form>
+                                        </div>
 
 
+                                    </div>
+                                </div>
+
+                                
+                                <div class="panel">
+                                    <div class="panel-hdr">
+                                        <h2>
+                                            ID Card <span class="fw-300"><i> </i></span>
+                                        </h2>
+                                    </div>
+                                    <div class="panel-container show">
+
+                                        <div class="panel-content p-0">
+                                            <form class="needs-validation" novalidate>
+                                                <div class="panel-content">
+                                                    <div class="form-row">
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">Working Area</label>
+                                                            <select class="form-control" id="example-select">
+                                                                <option>Working Area 1</option>
+                                                                <option>Working Area 2</option>
+                                                                <option>Working Area 3</option>
+                                                                <option>Working Area 4</option>
+                                                                <option>Working Area 5</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">Request Type</label>
+                                                            <select class="form-control" id="example-select">
+                                                                <option>baru</option>
+                                                                <option>rusak</option>
+                                                                <option>hilang</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">Request item</label>
+                                                            <select class="form-control" id="example-select">
+                                                                <option>Full set</option>
+                                                                <option>ID Card aja</option>
+                                                                <option>lanyard aja</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-row">
+                                                        <div class="col-md-12 mb-3">
+                                                            <label class="form-label" for="example-textarea">Description of post</label>
+                                                        <textarea class="form-control" id="example-textarea" rows="5"></textarea>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                        <div class="panel-content border-faded border-left-0 border-right-0 border-bottom-0 d-flex flex-row">
+                                            <button class="btn btn-primary ml-auto waves-effect waves-themed" type="submit">Save</button>
                                         </div>
 
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </main>
@@ -546,12 +560,10 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
         <script src="js/vendors.bundle.js"></script>
         <script src="js/app.bundle.js"></script>
         <script src="js/common.js"></script>
-        
         <!--This page contains the basic JS and CSS files to get started on your project. If you need aditional addon's or plugins please see scripts located at the bottom of each page in order to find out which JS/CSS files to add.-->
         <script src="js/datagrid/datatables/datatables.bundle.js"></script>
         <script src="js/notifications/sweetalert2/sweetalert2.bundle.js"></script>
 
-        
 
 
         <script>
@@ -561,7 +573,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 
             $(document).ready(function(){
 
-                loadMenuActive('user_meal_request_list');
+                loadMenuActive('user_uniform_list');
 
                 $('#btn_save').on('click', function(){
 
@@ -644,16 +656,14 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                             className: 'btn-success btn-sm mr-1',
                             action: function ( e, dt, node, config ) {
                                 // $('#default-example-modal-lg').modal('show');
-                                document.location.href = 'meal_request_regist.html';
+                                document.location.href = "uniform_regist.html";
                             }
                         },{
                             text: '<i class="fal fa-edit mr-1"></i> Edit',
                             name: 'edit',
                             className: 'btn-success btn-sm mr-1',
                             action: function ( e, dt, node, config ) {
-                                // $('#default-example-modal-lg').modal('show');
-                                document.location.href = 'meal_request_regist.html';
-
+                                $('#default-example-modal-lg').modal('show');
                             }
                         },
                         {
