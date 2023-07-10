@@ -1,4 +1,12 @@
-document.write('<li class="active">');
+
+document.write('<li id="user_dashboard"> ');
+document.write('    <a href="user_dashboard.html" title="Request List" data-filter-tags="font icons">');
+document.write('        <i class="fal fa-list"></i>');
+document.write('        <span class="nav-link-text" data-i18n="nav.font_icons">Request Registration</span>');
+document.write('    </a>');
+document.write('</li>');
+
+document.write('<li>');
 document.write('    <a href="#" title="Request List" data-filter-tags="font icons">');
 document.write('        <i class="fal fa-list"></i>');
 document.write('        <span class="nav-link-text" data-i18n="nav.font_icons">Request List</span>');
