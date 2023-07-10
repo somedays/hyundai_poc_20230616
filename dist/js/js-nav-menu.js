@@ -47,7 +47,7 @@ document.write('                        <span class="nav-link-text" data-i18n="n
 document.write('                    </a>');
 document.write('                </li>');
 
-document.write('                <li> id="user_shuttle_bus_list" ');
+document.write('                <li id="user_shuttle_bus_list" >');
 document.write('                    <a href="shuttle_bus_list.html" title="Shuttle Bus" >');
 document.write('                        <span class="nav-link-text" data-i18n="nav.font_icons_nextgen_icons_general">Shuttle Bus</span>');
 document.write('                    </a>');
