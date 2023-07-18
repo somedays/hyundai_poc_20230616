@@ -358,68 +358,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 
                                                     <div class="form-row">
 
-                                                        <div class="col-md-4 mb-3">
-                                                            <label class="form-label" for="simpleinput">Permit Type</label>
-                                                            <select class="form-control" id="example-select">
-                                                                <option>Visitor</option>
-                                                                <option>Goods</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="col-md-4 mb-3">
-                                                            <label class="form-label" for="simpleinput">Access</label>
-                                                            <select class="form-control" id="example-select">
-                                                                <option>In</option>
-                                                                <option>Out</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="col-md-4 mb-3">
-                                                            <label class="form-label" for="simpleinput">Date</label>
-                                                            <div class="input-daterange input-group" id="datepicker-5">
-                                                                <input type="text" class="form-control" name="startdate">
-                                                                <div class="input-group-append input-group-prepend">
-                                                                    <span class="input-group-text fs-xl"><i class="fal fa-ellipsis-h"></i></span>
-                                                                </div>
-                                                                <input type="text" class="form-control" name="enddate">
-                                                            </div>
-                                                        </div>
-
-
-                                                    </div>
-
-                                                    <div class="form-row">
-
-                                                        <div class="col-md-4 mb-3">
-                                                            <label class="form-label" for="simpleinput">Name</label>
-                                                            <input type="text" class="form-control" name="" placeholder="Name">
-                                                        </div>
-
-                                                        <div class="col-md-4 mb-3">
-                                                            <label class="form-label" for="simpleinput">Company Name</label>
-                                                            <input type="text" class="form-control" name="" placeholder="Company Name">
-                                                        </div>
-
-                                                        <div class="col-md-4 mb-3">
-                                                            <label class="form-label" for="simpleinput">Vehicle number</label>
-                                                            <input type="text" class="form-control" name="" placeholder="Vehicle number">
-                                                        </div>
-
-
-                                                    </div>
-
-                                                    <div class="form-row">
-
-                                                        <div class="col-md-4 mb-3">
-                                                            <label class="form-label" for="simpleinput">Purpose</label>
-                                                            <input type="text" class="form-control" name="" placeholder="Purpose">
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="form-row">
-
-                                                        <div class="border px-3 pt-3 pb-0 rounded">
+                                                        <div class=" px-3 pt-3 pb-0 rounded">
                                                             <ul class="nav nav-pills" role="tablist">
                                                                 <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#js_pill_border_icon-1"><i class="fal fa-home mr-1"></i>Visitor List + ID No</a></li>
                                                                 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#js_pill_border_icon-2"><i class="fal fa-user mr-1"></i>Good inofmration</a></li>
@@ -441,8 +380,10 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                                                     <th>#</th>
                                                                                     <th>Visitor Name</th>
                                                                                     <th>Company Name</th>
+                                                                                    <th>Visitor Date</th>
                                                                                     <th>Vehicle No.</th>
                                                                                     <th>Shop area</th>
+                                                                                    <th>Access</th>
                                                                                     <th>Purpose</th>
                                                                                     <th>#</th>
                                                                                 </tr>
@@ -452,8 +393,23 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                                                     <th scope="row">1</th>
                                                                                     <td><input type="text" class="form-control" name="" placeholder="Visitor Name"></td>
                                                                                     <td><input type="text" class="form-control" name="" placeholder="Company Name"></td>
+                                                                                    <td>
+                                                                                        <div class="input-daterange input-group" id="datepicker-5">
+                                                                                            <input type="text" class="form-control" name="startdate">
+                                                                                            <div class="input-group-append input-group-prepend">
+                                                                                                <span class="input-group-text fs-xl"><i class="fal fa-ellipsis-h"></i></span>
+                                                                                            </div>
+                                                                                            <input type="text" class="form-control" name="enddate">
+                                                                                        </div>
+                                                                                    </td>
                                                                                     <td><input type="text" class="form-control" name="" placeholder="Vehicle No."></td>
                                                                                     <td><input type="text" class="form-control" name="" placeholder="Shop area"></td>
+                                                                                    <td>
+                                                                                        <select class="form-control" id="example-select">
+                                                                                            <option>In</option>
+                                                                                            <option>Out</option>
+                                                                                        </select>
+                                                                                    </td>
                                                                                     <td><input type="text" class="form-control" name="" placeholder="Daily Workiung"></td>
                                                                                     <td><button type="button" onclick="javascript:removeTableItem(this);" class="btn btn-sm btn-default waves-effect waves-themed"><span class="fal fa-times mr-1"></span></button></td>
                                                                                 </tr>
@@ -461,8 +417,23 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                                                     <th scope="row">2</th>
                                                                                     <td><input type="text" class="form-control" name="" placeholder="Visitor Name"></td>
                                                                                     <td><input type="text" class="form-control" name="" placeholder="Company Name"></td>
+                                                                                    <td>
+                                                                                        <div class="input-daterange input-group" id="datepicker-5">
+                                                                                            <input type="text" class="form-control" name="startdate">
+                                                                                            <div class="input-group-append input-group-prepend">
+                                                                                                <span class="input-group-text fs-xl"><i class="fal fa-ellipsis-h"></i></span>
+                                                                                            </div>
+                                                                                            <input type="text" class="form-control" name="enddate">
+                                                                                        </div>
+                                                                                    </td>
                                                                                     <td><input type="text" class="form-control" name="" placeholder="Vehicle No."></td>
                                                                                     <td><input type="text" class="form-control" name="" placeholder="Shop area"></td>
+                                                                                    <td>
+                                                                                        <select class="form-control" id="example-select">
+                                                                                            <option>In</option>
+                                                                                            <option>Out</option>
+                                                                                        </select>
+                                                                                    </td>
                                                                                     <td><input type="text" class="form-control" name="" placeholder="Daily Workiung"></td>
                                                                                     <td><button type="button" onclick="javascript:removeTableItem(this);"  class="btn btn-sm btn-default waves-effect waves-themed"><span class="fal fa-times mr-1"></span></button></td>
                                                                                 </tr>
@@ -470,8 +441,23 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                                                     <th scope="row">3</th>
                                                                                     <td><input type="text" class="form-control" name="" placeholder="Visitor Name"></td>
                                                                                     <td><input type="text" class="form-control" name="" placeholder="Company Name"></td>
+                                                                                    <td>
+                                                                                        <div class="input-daterange input-group" id="datepicker-5">
+                                                                                            <input type="text" class="form-control" name="startdate">
+                                                                                            <div class="input-group-append input-group-prepend">
+                                                                                                <span class="input-group-text fs-xl"><i class="fal fa-ellipsis-h"></i></span>
+                                                                                            </div>
+                                                                                            <input type="text" class="form-control" name="enddate">
+                                                                                        </div>
+                                                                                    </td>
                                                                                     <td><input type="text" class="form-control" name="" placeholder="Vehicle No."></td>
                                                                                     <td><input type="text" class="form-control" name="" placeholder="Shop area"></td>
+                                                                                    <td>
+                                                                                        <select class="form-control" id="example-select">
+                                                                                            <option>In</option>
+                                                                                            <option>Out</option>
+                                                                                        </select>
+                                                                                    </td>
                                                                                     <td><input type="text" class="form-control" name="" placeholder="Daily Workiung"></td>
                                                                                     <td><button type="button" onclick="javascript:removeTableItem(this);"  class="btn btn-sm btn-default waves-effect waves-themed"><span class="fal fa-times mr-1"></span></button></td>
                                                                                 </tr>
@@ -490,6 +476,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                                         <thead>
                                                                             <tr>
                                                                                 <th>#</th>
+                                                                                <th>Visitor Name</th>
                                                                                 <th>Goods Name</th>
                                                                                 <th>Goods ID</th>
                                                                                 <th>Purpose</th>
@@ -499,6 +486,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                                         <tbody>
                                                                             <tr>
                                                                                 <th scope="row">1</th>
+                                                                                <td><input type="text" class="form-control" name="" placeholder="Visitor Name"></td>
                                                                                 <td><input type="text" class="form-control" name="" placeholder="Laptop"></td>
                                                                                 <td><input type="text" class="form-control" name="" placeholder="T430s"></td>
                                                                                 <td><input type="text" class="form-control" name="" placeholder="Conference"></td>
@@ -506,6 +494,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                                             </tr>
                                                                             <tr>
                                                                                 <th scope="row">2</th>
+                                                                                <td><input type="text" class="form-control" name="" placeholder="Visitor Name"></td>
                                                                                 <td><input type="text" class="form-control" name="" placeholder="Laptop"></td>
                                                                                 <td><input type="text" class="form-control" name="" placeholder="T430s"></td>
                                                                                 <td><input type="text" class="form-control" name="" placeholder="Conference"></td>
@@ -513,6 +502,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                                             </tr>
                                                                             <tr>
                                                                                 <th scope="row">3</th>
+                                                                                <td><input type="text" class="form-control" name="" placeholder="Visitor Name"></td>
                                                                                 <td><input type="text" class="form-control" name="" placeholder="Laptop"></td>
                                                                                 <td><input type="text" class="form-control" name="" placeholder="T430s"></td>
                                                                                 <td><input type="text" class="form-control" name="" placeholder="Conference"></td>
@@ -803,15 +793,43 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                     var visitorTableLength = $('#visitor_table tr').length;
 
                     var template = [];
+
                     template.push('<tr>');
                     template.push('    <th scope="row">'+ visitorTableLength +'</th>');
                     template.push('    <td><input type="text" class="form-control" name="" placeholder="Visitor Name"></td>');
                     template.push('    <td><input type="text" class="form-control" name="" placeholder="Company Name"></td>');
+                    template.push('    <td>');
+                    template.push('        <div class="input-daterange input-group" id="datepicker-5">');
+                    template.push('            <input type="text" class="form-control" name="startdate">');
+                    template.push('            <div class="input-group-append input-group-prepend">');
+                    template.push('                <span class="input-group-text fs-xl"><i class="fal fa-ellipsis-h"></i></span>');
+                    template.push('            </div>');
+                    template.push('            <input type="text" class="form-control" name="enddate">');
+                    template.push('        </div>');
+                    template.push('    </td>');
                     template.push('    <td><input type="text" class="form-control" name="" placeholder="Vehicle No."></td>');
                     template.push('    <td><input type="text" class="form-control" name="" placeholder="Shop area"></td>');
+                    template.push('    <td>');
+                    template.push('        <select class="form-control" id="example-select">');
+                    template.push('            <option>In</option>');
+                    template.push('            <option>Out</option>');
+                    template.push('        </select>');
+                    template.push('    </td>');
                     template.push('    <td><input type="text" class="form-control" name="" placeholder="Daily Workiung"></td>');
-                    template.push('    <td><button type="button" onclick="javascript:removeTableItem(this);" class="btn btn-sm btn-default waves-effect waves-themed"><span class="fal fa-times mr-1"></span></button></td>');
+                    template.push('    <td><button type="button" onclick="javascript:removeTableItem(this);"  class="btn btn-sm btn-default waves-effect waves-themed"><span class="fal fa-times mr-1"></span></button></td>');
                     template.push('</tr>');
+
+
+
+                    // template.push('<tr>');
+                    // template.push('    <th scope="row">'+ visitorTableLength +'</th>');
+                    // template.push('    <td><input type="text" class="form-control" name="" placeholder="Visitor Name"></td>');
+                    // template.push('    <td><input type="text" class="form-control" name="" placeholder="Company Name"></td>');
+                    // template.push('    <td><input type="text" class="form-control" name="" placeholder="Vehicle No."></td>');
+                    // template.push('    <td><input type="text" class="form-control" name="" placeholder="Shop area"></td>');
+                    // template.push('    <td><input type="text" class="form-control" name="" placeholder="Daily Workiung"></td>');
+                    // template.push('    <td><button type="button" onclick="javascript:removeTableItem(this);" class="btn btn-sm btn-default waves-effect waves-themed"><span class="fal fa-times mr-1"></span></button></td>');
+                    // template.push('</tr>');
 
                     $('#visitor_table').append(template.join(''));
 
@@ -824,6 +842,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                     var template = [];
                     template.push('<tr>');
                     template.push('    <th scope="row">'+ visitorTableLength +'</th>');
+                    template.push('    <td><input type="text" class="form-control" name="" placeholder="Visitor Name"></td>');
                     template.push('    <td><input type="text" class="form-control" name="" placeholder="Laptop"></td>');
                     template.push('    <td><input type="text" class="form-control" name="" placeholder="T430s"></td>');
                     template.push('    <td><input type="text" class="form-control" name="" placeholder="Conference"></td>');
@@ -840,6 +859,46 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                 $(lineObj).closest('tr').remove();
 
             }
+
+            // 저장시
+            // 01. 데이터 Object 를 만든다.
+            /*
+                var dataObject ={
+                    header : {
+                        NIK : 'data',
+                        Position : 'Position',
+                        Department : 'Department',
+                        Group : 'Group',
+                    },
+                    visitorTable : [
+                        {
+                            name: 'name',
+                            companyName: 'companyName',
+                            vinNo: 'vinNo',
+                            
+                        },{
+                            name: 'name',
+                            companyName: 'companyName',
+                            vinNo: 'vinNo',
+                            
+                        },{
+                            name: 'name',
+                            companyName: 'companyName',
+                            vinNo: 'vinNo',
+                            
+                        }
+                    ]
+                }
+
+            */
+
+            // 02. Validation check 로직을 수행한다.
+
+
+            // 03. JSON.stringify(dataObject) 로 데이터를 문자직렬화 한다.
+            // like this
+//'{"header":{"NIK":"data","Position":"Position","Department":"Department","Group":"Group"},"visitorTable":[{"name":"name","companyName":"companyName","vinNo":"vinNo"},{"name":"name","companyName":"companyName","vinNo":"vinNo"},{"name":"name","companyName":"companyName","vinNo":"vinNo"}]}'
+
 
         </script>
     </body>
