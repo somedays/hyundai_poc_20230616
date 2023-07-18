@@ -388,6 +388,149 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 
                                                     </div>
 
+                                                    <div class="form-row">
+
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">Name</label>
+                                                            <input type="text" class="form-control" name="" placeholder="Name">
+                                                        </div>
+
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">Company Name</label>
+                                                            <input type="text" class="form-control" name="" placeholder="Company Name">
+                                                        </div>
+
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">Vehicle number</label>
+                                                            <input type="text" class="form-control" name="" placeholder="Vehicle number">
+                                                        </div>
+
+
+                                                    </div>
+
+                                                    <div class="form-row">
+
+                                                        <div class="col-md-4 mb-3">
+                                                            <label class="form-label" for="simpleinput">Purpose</label>
+                                                            <input type="text" class="form-control" name="" placeholder="Purpose">
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="form-row">
+
+                                                        <div class="border px-3 pt-3 pb-0 rounded">
+                                                            <ul class="nav nav-pills" role="tablist">
+                                                                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#js_pill_border_icon-1"><i class="fal fa-home mr-1"></i>Visitor List + ID No</a></li>
+                                                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#js_pill_border_icon-2"><i class="fal fa-user mr-1"></i>Good inofmration</a></li>
+                                                                <!-- <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#js_pill_border_icon-3"><i class="fal fa-clock mr-1"></i>Time</a></li> -->
+                                                            </ul>
+                                                            <div class="tab-content py-3">
+                                                                <div class="tab-pane fade active show" id="js_pill_border_icon-1" role="tabpanel">
+                                                                    <div class="table-responsive-lg">
+
+                                                                        <div class="" style="float:right;">
+                                                                            <div class="demo">
+                                                                                <button type="button" id="btn_add_visitor" class="btn btn-default waves-effect waves-themed"><span class="fal fa-plus mr-1"></span>Add</button>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <table class="table table-bordered m-0" id="visitor_table">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>#</th>
+                                                                                    <th>Visitor Name</th>
+                                                                                    <th>Company Name</th>
+                                                                                    <th>Vehicle No.</th>
+                                                                                    <th>Shop area</th>
+                                                                                    <th>Purpose</th>
+                                                                                    <th>#</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <th scope="row">1</th>
+                                                                                    <td><input type="text" class="form-control" name="" placeholder="Visitor Name"></td>
+                                                                                    <td><input type="text" class="form-control" name="" placeholder="Company Name"></td>
+                                                                                    <td><input type="text" class="form-control" name="" placeholder="Vehicle No."></td>
+                                                                                    <td><input type="text" class="form-control" name="" placeholder="Shop area"></td>
+                                                                                    <td><input type="text" class="form-control" name="" placeholder="Daily Workiung"></td>
+                                                                                    <td><button type="button" onclick="javascript:removeTableItem(this);" class="btn btn-sm btn-default waves-effect waves-themed"><span class="fal fa-times mr-1"></span>Delete</button></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="row">2</th>
+                                                                                    <td><input type="text" class="form-control" name="" placeholder="Visitor Name"></td>
+                                                                                    <td><input type="text" class="form-control" name="" placeholder="Company Name"></td>
+                                                                                    <td><input type="text" class="form-control" name="" placeholder="Vehicle No."></td>
+                                                                                    <td><input type="text" class="form-control" name="" placeholder="Shop area"></td>
+                                                                                    <td><input type="text" class="form-control" name="" placeholder="Daily Workiung"></td>
+                                                                                    <td><button type="button" onclick="javascript:removeTableItem(this);"  class="btn btn-sm btn-default waves-effect waves-themed"><span class="fal fa-times mr-1"></span>Delete</button></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="row">3</th>
+                                                                                    <td><input type="text" class="form-control" name="" placeholder="Visitor Name"></td>
+                                                                                    <td><input type="text" class="form-control" name="" placeholder="Company Name"></td>
+                                                                                    <td><input type="text" class="form-control" name="" placeholder="Vehicle No."></td>
+                                                                                    <td><input type="text" class="form-control" name="" placeholder="Shop area"></td>
+                                                                                    <td><input type="text" class="form-control" name="" placeholder="Daily Workiung"></td>
+                                                                                    <td><button type="button" onclick="javascript:removeTableItem(this);"  class="btn btn-sm btn-default waves-effect waves-themed"><span class="fal fa-times mr-1"></span>Delete</button></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="js_pill_border_icon-2" role="tabpanel">
+                                                                    <div class="" style="float:right;">
+                                                                        <div class="demo">
+                                                                            <button type="button" id="btn_add_visitor_goods" class="btn btn-default waves-effect waves-themed"><span class="fal fa-plus mr-1"></span>Add</button>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <table class="table table-bordered m-0" id="visitor_goods_table">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>#</th>
+                                                                                <th>Goods Name</th>
+                                                                                <th>Goods ID</th>
+                                                                                <th>Purpose</th>
+                                                                                <th>#</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th scope="row">1</th>
+                                                                                <td><input type="text" class="form-control" name="" placeholder="Laptop"></td>
+                                                                                <td><input type="text" class="form-control" name="" placeholder="T430s"></td>
+                                                                                <td><input type="text" class="form-control" name="" placeholder="Conference"></td>
+                                                                                <td><button type="button" onclick="javascript:removeTableItem(this);" class="btn btn-sm btn-default waves-effect waves-themed"><span class="fal fa-times mr-1"></span>Delete</button></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th scope="row">2</th>
+                                                                                <td><input type="text" class="form-control" name="" placeholder="Laptop"></td>
+                                                                                <td><input type="text" class="form-control" name="" placeholder="T430s"></td>
+                                                                                <td><input type="text" class="form-control" name="" placeholder="Conference"></td>
+                                                                                <td><button type="button" onclick="javascript:removeTableItem(this);" class="btn btn-sm btn-default waves-effect waves-themed"><span class="fal fa-times mr-1"></span>Delete</button></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th scope="row">3</th>
+                                                                                <td><input type="text" class="form-control" name="" placeholder="Laptop"></td>
+                                                                                <td><input type="text" class="form-control" name="" placeholder="T430s"></td>
+                                                                                <td><input type="text" class="form-control" name="" placeholder="Conference"></td>
+                                                                                <td><button type="button" onclick="javascript:removeTableItem(this);" class="btn btn-sm btn-default waves-effect waves-themed"><span class="fal fa-times mr-1"></span>Delete</button></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+
+                                                                </div>
+                                                                <!-- <div class="tab-pane fade" id="js_pill_border_icon-3" role="tabpanel">
+                                                                    Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+
                                                 </div>
 
                                             </form>
@@ -655,8 +798,48 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                     },
                 });
 
+                $('#btn_add_visitor').on('click', function(){
+
+                    var visitorTableLength = $('#visitor_table tr').length;
+
+                    var template = [];
+                    template.push('<tr>');
+                    template.push('    <th scope="row">'+ visitorTableLength +'</th>');
+                    template.push('    <td><input type="text" class="form-control" name="" placeholder="Visitor Name"></td>');
+                    template.push('    <td><input type="text" class="form-control" name="" placeholder="Company Name"></td>');
+                    template.push('    <td><input type="text" class="form-control" name="" placeholder="Vehicle No."></td>');
+                    template.push('    <td><input type="text" class="form-control" name="" placeholder="Shop area"></td>');
+                    template.push('    <td><input type="text" class="form-control" name="" placeholder="Daily Workiung"></td>');
+                    template.push('    <td><button type="button" onclick="javascript:removeTableItem(this);" class="btn btn-sm btn-default waves-effect waves-themed"><span class="fal fa-times mr-1"></span>Delete</button></td>');
+                    template.push('</tr>');
+
+                    $('#visitor_table').append(template.join(''));
+
+                });
+
+                $('#btn_add_visitor_goods').on('click', function(){
+
+                    var visitorTableLength = $('#visitor_goods_table tr').length;
+
+                    var template = [];
+                    template.push('<tr>');
+                    template.push('    <th scope="row">'+ visitorTableLength +'</th>');
+                    template.push('    <td><input type="text" class="form-control" name="" placeholder="Laptop"></td>');
+                    template.push('    <td><input type="text" class="form-control" name="" placeholder="T430s"></td>');
+                    template.push('    <td><input type="text" class="form-control" name="" placeholder="Conference"></td>');
+                    template.push('    <td><button type="button" onclick="javascript:removeTableItem(this);" class="btn btn-sm btn-default waves-effect waves-themed"><span class="fal fa-times mr-1"></span>Delete</button></td>');
+                    template.push('</tr>');
+
+                    $('#visitor_goods_table').append(template.join(''));
+
+                });
 
             });
+
+            function removeTableItem(lineObj){
+                $(lineObj).closest('tr').remove();
+
+            }
 
         </script>
     </body>
