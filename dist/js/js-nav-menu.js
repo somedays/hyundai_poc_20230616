@@ -91,8 +91,9 @@ document.write('                <span class="nav-link-text" data-i18n="nav.font_
 document.write('            </a>');
 document.write('            <ul>');
 document.write('                <li id="user_visitor_entry_system_list">');
-document.write('                    <a href="visitor_entry_system_list.html" title="Visitor Entry System" >');
-document.write('                        <span class="nav-link-text" data-i18n="nav.font_icons_nextgen_icons_general">Visitor Entry System</span>');
+document.write('                    <a href="visitor_entry_system_list.html" title="Entry Permit" >');
+document.write('        				<i class="fal fa-id-card"></i>');
+document.write('                        <span class="nav-link-text" data-i18n="nav.font_icons_nextgen_icons_general">Entry Permit</span>');
 document.write('                    </a>');
 document.write('                </li>');
 document.write('                ');
@@ -190,8 +191,9 @@ document.write('                <span class="nav-link-text" data-i18n="nav.font_
 document.write('            </a>');
 document.write('            <ul>');
 document.write('                <li id="admin_visitor_entry_system">');
-document.write('                    <a href="admin_visitor_entry_system.html" title="Visitor Entry System" >');
-document.write('                        <span class="nav-link-text" data-i18n="nav.font_icons_nextgen_icons_general">Visitor Entry System</span>');
+document.write('                    <a href="admin_visitor_entry_system.html" title="Entry Permit" >');
+document.write('        				<i class="fal fa-id-card"></i>');
+document.write('                        <span class="nav-link-text" data-i18n="nav.font_icons_nextgen_icons_general">Entry Permit</span>');
 document.write('                    </a>');
 document.write('                </li>');
 document.write('                ');
