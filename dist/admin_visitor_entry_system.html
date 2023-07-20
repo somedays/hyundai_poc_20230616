@@ -251,15 +251,17 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                     <!-- the #js-page-content id is needed for some plugins to initialize -->
                     <main id="js-page-content" role="main" class="page-content">
                         <ol class="breadcrumb page-breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0);">Uniform</a></li>
-                            <li class="breadcrumb-item active">Approval Management</li>
+                            <!--  <li class="breadcrumb-item"><a href="javascript:void(0);">Uniform</a></li> -->
+                            <li class="breadcrumb-item">Approval Management</li>
+                            <li class="breadcrumb-item">Security</li>
+                            <li class="breadcrumb-item active">Security Entry Permit</li>
                             <!-- <li class="breadcrumb-item">Sub-category</li>
                             <li class="breadcrumb-item active">Page Title</li> -->
                             <!-- <li class="position-absolute pos-top pos-right d-none d-sm-block"><span class="js-get-date"></span></li> -->
                         </ol>
                         <div class="subheader">
                             <h1 class="subheader-title">
-                                <i class='subheader-icon fal fa-list'></i> Request List  
+                                <i class='subheader-icon fal fa-list'></i> Security Entry Permit  
                                 <!-- <small>
                                     Insert page description or punch line
                                 </small> -->
@@ -310,57 +312,38 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                     <tr>
                                                         <th>#</th>
                                                         <th>NO</th>
-                                                        <th>ID Number</th>
-                                                        <th>Name</th>
-                                                        <th>Position</th>
-                                                        <th>Dept. Name</th>
-                                                        <th>Group Name</th>
-                                                        <th>App type</th>
-                                                        <th>Working Area</th>
+                                                        <th>Name Vistor</th>
+                                                        <th>Company</th>
+                                                        <th>Vehicle Number</th>
+                                                        <th>Shop</th>
                                                         <th>Purpose</th>
-                                                        <th>Process Status</th>
-                                                        <th>Application Date</th>
-                                                        <th>Time Departure</th>
-                                                        <th>Time Arrival</th>
-                                                        <th>Applicator Name</th>
+                                                        <th>Goods</th>
+                                                        <th>Date</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
                                                         <td><input type="checkbox"></td>
                                                         <td>1</td>
-                                                        <td>62200147</td>
-                                                        <td>Daniel</td>
-                                                        <td>Sr. Spec</td>
-                                                        <td>BS</td>
-                                                        <td>Business Administrator</td>
-                                                        <td>Operational Car</td>
-                                                        <td>HMMI Factory</td>
-                                                        <td>Vendor Visit</td>
-                                                        <td>Waiting</td>
-                                                        <td>2019/04/02</td>
-                                                        <td>09:00</td>
-                                                        <td>13:00</td>
-                                                        <td>Daniel</td>
+                                                        <td>Bapak Agus</td>
+                                                        <td>PT. ABC</td>
+                                                        <td>B 1234 KKKc</td>
+                                                        <td>Assembly</td>
+                                                        <td>Meeting</td>
+                                                        <td>Laptop(2), Keyboard(1)</td>
+                                                        <td>15.05.2023 - 15.05.2023</td>
                                                     </tr>
                                                     <tr>
                                                         <td><input type="checkbox"></td>
-                                                        <td>2</td>
-                                                        <td>62200147</td>
-                                                        <td>Daniel</td>
-                                                        <td>Sr. Spec</td>
-                                                        <td>BS</td>
-                                                        <td>Business Administrator</td>
-                                                        <td>Operational Car</td>
-                                                        <td>HMMI Factory</td>
-                                                        <td>Vendor Visit</td>
-                                                        <td>Waiting</td>
-                                                        <td>2019/04/02</td>
-                                                        <td>09:00</td>
-                                                        <td>13:00</td>
-                                                        <td>Daniel</td>
+                                                        <td>1</td>
+                                                        <td>Bapak Agus</td>
+                                                        <td>PT. ABC</td>
+                                                        <td>B 1234 KKKc</td>
+                                                        <td>Assembly</td>
+                                                        <td>Meeting</td>
+                                                        <td>Laptop(2), Keyboard(1)</td>
+                                                        <td>15.05.2023 - 15.05.2023</td>
                                                     </tr>
-                                                   
                                                     
                                                 </tbody>
                                                 <!-- <tfoot>
@@ -375,9 +358,6 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                 </tfoot> -->
                                             </table>
                                             <!-- datatable end -->
-
-
-
 
                                         </div>
 
@@ -535,239 +515,208 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                     <div class="modal-body">
                         
                         <div class="col-xl-12">
-                            <div id="panel-1" class="panel">
+
+                            <div class="panel">
+                                <div class="panel-hdr">
+                                    <h2>
+                                        Requester <span class="fw-300"><i> </i></span>
+                                    </h2>
+                                </div>
                                 <div class="panel-container show">
-                                    <div class="panel-content">
-                                
-
-                                        <form>
-
-                                            <div class="row">
-                                                <div class="col-lg-6">
-
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="simpleinput">Working Area</label>
-                                                        <select class="form-control" id="example-select">
-                                                            <option>Working Area 1</option>
-                                                            <option>Working Area 2</option>
-                                                            <option>Working Area 3</option>
-                                                            <option>Working Area 4</option>
-                                                            <option>Working Area 5</option>
-                                                        </select>
-                                                    </div>
-
-                                                </div>
-                                                <div class="col-lg-6">
-
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="simpleinput">Name</label>
-                                                        <input type="text" id="simpleinput" class="form-control" placeholder="Daniel">
-                                                    </div>
-
-                                                </div>
-                                               
-                                            </div>
-
-
-                                            <div class="row">
-                                                <div class="col-lg-6">
-
-                                                    <div class="form-group">
+    
+                                    <div class="panel-content p-0">
+                                        <form class="needs-validation" novalidate>
+                                            <div class="panel-content">
+                                                <div class="form-row">
+                                                    <div class="col-md-4 mb-3">
                                                         <label class="form-label" for="simpleinput">NIK</label>
                                                         <input type="text" id="simpleinput" class="form-control" placeholder="62200147">
                                                     </div>
-
-                                                </div>
-                                                <div class="col-lg-6">
-
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="simpleinput">Group</label>
-                                                        <input type="text" id="simpleinput" class="form-control" placeholder="Business Administration">
+    
+                                                    <div class="col-md-4 mb-3">
+                                                        <label class="form-label" for="simpleinput">Name</label>
+    
+                                                        <div class="input-group input-group-sm bg-white shadow-inset-2">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text bg-transparent border-right-0 py-1 px-3 text-success">
+                                                                    <i class="fal fa-search"></i>
+                                                                </span>
+                                                            </div>
+                                                            <input type="text" class="form-control border-left-0 bg-transparent pl-0" placeholder="Daniel">
+                                                            <div class="input-group-append">
+                                                                <button class="btn btn-default" type="button">Search</button>
+                                                            </div>
+                                                        </div>
+    
                                                     </div>
-
+                                                    
                                                 </div>
-                                            </div>
-                                            
-
-                                            <div class="row">
-                                                <div class="col-lg-6">
-
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="simpleinput">Dept</label>
-                                                        <input type="text" id="simpleinput" class="form-control" placeholder="Business Supporting">
-                                                    </div>
-
-                                                </div>
-                                                <div class="col-lg-6">
-
-                                                    <div class="form-group">
+    
+                                                <div class="form-row">
+    
+                                                    <div class="col-md-4 mb-3">
                                                         <label class="form-label" for="simpleinput">Position</label>
                                                         <input type="text" id="simpleinput" class="form-control" placeholder="Sr. Spec">
                                                     </div>
-
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-lg-6">
-
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="simpleinput">Ho. Hp</label>
-                                                        <input type="text" id="simpleinput" class="form-control" placeholder="08504262200147">
+    
+                                                    <div class="col-md-4 mb-3">
+                                                        <label class="form-label" for="simpleinput">Department</label>
+                                                        <input type="text" id="simpleinput" class="form-control" placeholder="Business Supporting">
                                                     </div>
-
-                                                </div>
-                                                <div class="col-lg-6">
-
-                                                    <div class="form-group">
+    
+                                                    <div class="col-md-4 mb-3">
                                                         <label class="form-label" for="simpleinput">Group</label>
                                                         <input type="text" id="simpleinput" class="form-control" placeholder="Business Administration">
                                                     </div>
+    
+    
+                                                </div>
+    
+                                            </div>
+                                        </form>
+                                    </div>
+    
+    
+                                </div>
+                            </div>
+                            
+                            <div class="panel">
+                                <div class="panel-hdr">
+                                    <h2>
+                                        Security Entry Permit <span class="fw-300"><i> </i></span>
+                                    </h2>
+                                </div>
+                                <div class="panel-container show">
+
+                                    <div class="panel-content p-0">
+                                        <form class="needs-validation" novalidate>
+                                            <div class="panel-content">
+
+                                                <div class="form-row">
+
+                                                    <div class="col-md-4 mb-3">
+                                                        <label class="form-label" for="simpleinput">Permit Type</label>
+                                                        <select class="form-control" id="example-select">
+                                                            <option>Visitor</option>
+                                                            <option>Goods</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="col-md-4 mb-3">
+                                                        <label class="form-label" for="simpleinput">Access</label>
+                                                        <select class="form-control" id="example-select">
+                                                            <option>In</option>
+                                                            <option>Out</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <!-- <div class="col-md-4 mb-3">
+                                                        <label class="form-label" for="simpleinput">Date</label>
+                                                        <div class="input-daterange input-group" id="datepicker-5">
+                                                            <input type="text" class="form-control" name="startdate">
+                                                            <div class="input-group-append input-group-prepend">
+                                                                <span class="input-group-text fs-xl"><i class="fal fa-ellipsis-h"></i></span>
+                                                            </div>
+                                                            <input type="text" class="form-control" name="enddate">
+                                                        </div>
+                                                    </div>
+-->
 
                                                 </div>
-                                            </div>
 
-                                            <div class="row">
-                                                <div class="col-lg-6">
-                                                    <div class="form-group">
+                                                <div class="form-row">
+
+                                                    <div class="col-md-4 mb-3">
+                                                        <label class="form-label" for="simpleinput">Name</label>
+                                                        <input type="text" class="form-control" name="" placeholder="Name">
+                                                    </div>
+
+                                                    <div class="col-md-4 mb-3">
+                                                        <label class="form-label" for="simpleinput">Company Name</label>
+                                                        <input type="text" class="form-control" name="" placeholder="Company Name">
+                                                    </div>
+<!-- 
+                                                    <div class="col-md-4 mb-3">
+                                                        <label class="form-label" for="simpleinput">Vehicle number</label>
+                                                        <input type="text" class="form-control" name="" placeholder="Vehicle number">
+                                                    </div> -->
+
+                                                </div>
+<!-- 
+                                                <div class="form-row">
+
+                                                    <div class="col-md-4 mb-3">
                                                         <label class="form-label" for="simpleinput">Purpose</label>
-                                                        <select class="form-control" id="example-select">
-                                                            <option>Business</option>
-                                                            <option>Wedding Car</option>
-                                                            <option>Business Purpose 1</option>
-                                                            <option>Business Purpose 2</option>
-                                                            <option>Business Purpose 3</option>
-                                                        </select>
+                                                        <input type="text" class="form-control" name="" placeholder="Purpose">
                                                     </div>
 
-                                                </div>
-                                                <div class="col-lg-6">
+                                                </div> -->
+                                                <div class="form-row">
+                                                    <div class="col-xl-12">
 
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="simpleinput">Date Reservation</label>
-                                                        <input type="text" id="simpleinput" class="form-control" placeholder="YYYY.MM.DD">
+                                                        <div class="border px-3 pt-3 pb-0 rounded">
+                                                            <ul class="nav nav-tabs" role="tablist">
+                                                                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#js_pill_border_icon-1"><i class="fal fa-home mr-1"></i>Visitor Information</a></li>
+                                                                <!-- <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#js_pill_border_icon-2"><i class="fal fa-user mr-1"></i>Goods Information</a></li> -->
+                                                                <!-- <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#js_pill_border_icon-3"><i class="fal fa-clock mr-1"></i>Time</a></li> -->
+                                                            </ul>
+                                                            <div class="tab-content py-3">
+
+                                                                <div class="tab-pane fade active show" id="js_pill_border_icon-1" role="tabpanel">
+
+                                                                    <!-- row -->
+                                                                    <div class="row">
+                                                                        <div class="col-xl-12">
+                                                                            <!-- datatable start -->
+                                                                            <table id="dt-visitor-table" class="table table-bordered table-hover table-striped w-100">
+                                                                            </table>
+                                                                        <!-- datatable end -->
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- end row -->
+
+                                                                </div>
+                                                               
+                                                                <!-- <div class="tab-pane fade" id="js_pill_border_icon-2" role="tabpanel">
+                                                                    
+                                                                    row
+                                                                    <div class="row">
+                                                                        <div class="col-xl-12">
+                                                                            datatable start
+                                                                            <table id="dt-goods-table" class="table table-bordered table-hover table-striped w-100">
+                                                                            </table>
+                                                                        datatable end
+                                                                        </div>
+                                                                    </div>
+                                                                    end row
+
+                                                                </div> -->
+                                                                    
+                                                            </div>
+                                                        </div>
+
                                                     </div>
-
-                                                </div>
-                                                <div class="col-lg-6">
-
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="simpleinput">Location Target</label>
-                                                        <input type="text" id="simpleinput" class="form-control" placeholder="Bekasi">
-                                                    </div>
-
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                
-                                                <div class="col-lg-6">
-
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="simpleinput">Time Depature</label>
-                                                        <input type="text" id="simpleinput" class="form-control" placeholder="09:00">
-                                                    </div>
-
                                                 </div>
 
-                                                <div class="col-lg-6">
-
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="simpleinput">Time Arrival</label>
-                                                        <input type="text" id="simpleinput" class="form-control" placeholder="13:00">
-                                                    </div>
-
-                                                </div>
-                                                
-                                                
-                                            </div>
-
-                                            <div class="row">
-                                                
-                                                <div class="col-lg-6">
-
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="simpleinput">Distance</label>
-                                                        <input type="text" id="simpleinput" class="form-control" placeholder="48 km">
-                                                    </div>
-
-                                                </div>
-                                                <div class="col-lg-6">
-
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="simpleinput">Time Depature</label>
-                                                        <input type="text" id="simpleinput" class="form-control" placeholder="">
-                                                    </div>
-
-                                                </div>
-                                                
-                                            </div>
-
-
-                                            <div class="row">
-                                                
-                                                <div class="col-lg-6">
-
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="simpleinput">Message</label>
-                                                        <input type="text" id="simpleinput" class="form-control" placeholder="Visit vendor to checck quality item that want to purchase">
-                                                    </div>
-
-                                                </div>
-
-                                                <div class="col-lg-6">
-
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="simpleinput">Note</label>
-                                                        <input type="text" id="simpleinput" class="form-control" placeholder="">
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                            <div class="row">
-                                                
-                                                <div class="col-lg-6">
-
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="simpleinput">Driver</label>
-                                                        <input type="text" id="simpleinput" class="form-control" placeholder="">
-                                                    </div>
-
-                                                </div>
-                                                <div class="col-lg-6">
-
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="simpleinput">Vehicle Type</label>
-                                                        <select class="form-control" id="example-select">
-                                                            <option>Vehicle Type 1</option>
-                                                            <option>Vehicle Type 2</option>
-                                                            <option>Vehicle Type 3</option>
-                                                        </select>
-                                                    </div>
-
-                                                </div>
-                                                
                                             </div>
 
                                         </form>
+                                    </div>
 
+                                    <div class="panel-content border-faded border-left-0 border-right-0 border-bottom-0 d-flex flex-row">
+                                        <button class="btn btn-primary ml-auto waves-effect waves-themed" type="submit">Save</button>
                                     </div>
 
                                 </div>
                             </div>
+
                         </div>
 
-
-
                     </div>
-                    <div class="modal-footer">
+                    <!-- <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal"> <i class="fal fa-times mr-1"></i> Close</button>
                         <button type="button" class="btn btn-success" id="btn_save"> <i class="fal fa-save mr-1"></i> Save </button>
-
-
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -813,6 +762,10 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                     Swal.fire('Successfully Saved.', '', 'success');
                 });
 
+
+                $('#default-example-modal-lg').on('shown.bs.modal', function (e) {
+                    redrawDataTable();
+                });
 
 
                 $('#dt-basic-example').dataTable(
@@ -914,9 +867,6 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                    // }
                                 });
 
-
-
-
                             }
                         },
                         {
@@ -944,17 +894,184 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                    // }
                                 });
 
-
-
-
                             }
-                        },
+                        }
 
                     ]
 
                 });
 
+                /*
+                // range picker
+                $('.input-daterange').datepicker({
+                    todayHighlight: true,
+                    autoclose: true,
+                    templates: {
+                        leftArrow: '<i class="fal fa-angle-left" style="font-size: 1.25rem"></i>',
+                        rightArrow: '<i class="fal fa-angle-right" style="font-size: 1.25rem"></i>'
+                    },
+                });
+                */
+
+
+                /* start data table */
+                var myTable = $('#dt-visitor-table').dataTable(
+                {
+                    /* check datatable buttons page for more info on how this DOM structure works */
+                    dom: "<'row mb-3'<'col-sm-12 col-md-6 d-flex align-items-center justify-content-start'f><'col-sm-12 col-md-6 d-flex align-items-center justify-content-end'B>>" +
+                        "<'row'<'col-sm-12'tr>>" +
+                        "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
+                    // ajax: "media/data/server-demo.json",
+                    data: [],
+                    // Column Definitions
+                    columns: [
+                    {
+                        title: "No",
+                        id: "DT_RowId",
+                        data: "DT_RowId",
+                        placeholderMsg: "Server Generated ID",
+                        "visible": false,
+                        "searchable": false,
+                        type: "readonly"
+                    },
+                    {
+                        title: "Visitor Name",
+                        id: "visitor_name",
+                        data: "VISITOR_NAME",
+                        placeholderMsg: "Visitor Name",
+                        type: "text",
+                        required: true
+                        // "options": [
+                        //     "active",
+                        //     "inactive",
+                        //     "disabled",
+                        //     "partial"
+                        // ]
+                    },{
+                        title: "User Email",
+                        id: "user",
+                        data: "user",
+                        type: "text",
+                        pattern: "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$",
+                        placeholderMsg: "user@domain.com",
+                        errorMsg: "*Invalid email - Enter valid email.",
+                        unique: true,
+                        required: true,
+                        uniqueMsg: "Email already in use"
+                    },{
+                        title: "Company Name",
+                        id: "visitor_company_name",
+                        data: "VISITOR_COMPANY_NAME",
+                        type: "text",
+                        //pattern: "((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\.|$)){4}",
+                        placeholderMsg: "Company Name",
+                        // errorMsg: "*Invalid address - Enter valid ip.",
+                        // hoverMsg: "(Optional) - Ex: 82.84.86.88",
+                        // unique: true,
+                        // uniqueMsg: "Already exists. IP must be unique!",
+                        unique: false,
+                        required: true
+                    },{
+                        title: "Visitor Date",
+                        id: "visit_date",
+                        data: "VISIT_DATE",
+                        type: "date",
+                        // pattern: "((?:19|20)\d\d)-(0?[1-9]|1[012])-([12][0-9]|3[01]|0?[1-9])",
+                        placeholderMsg: "yyyy-mm-dd",
+                        errorMsg: "*Invalid date format. Format must be yyyy-mm-dd"
+                    },{
+                        title: "Vehicle No.",
+                        id: "vin_no",
+                        data: "VIN_NO",
+                        type: "text",
+                        placeholderMsg: "",
+                        // errorMsg: "*Invalid port - Enter valid port or range.",
+                        // hoverMsg: "Ex: 6112 (single)   or   6111:6333 (range)",
+                        // unique: false,
+                        // required: true
+                    },{
+                        title: "Mobile No.",
+                        id: "mobile_no",
+                        data: "MOBILE_NO",
+                        type: "text",
+                        placeholderMsg: "",
+                        // errorMsg: "*Invalid port - Enter valid port or range.",
+                        // hoverMsg: "Ex: 6112 (single)   or   6111:6333 (range)",
+                        // unique: false,
+                        // required: true
+                    },{
+                        title: "Shop area",
+                        id: "shop_area",
+                        data: "SHOP_AREA",
+                        type: "text",
+                    },{
+                        title: "Purpose",
+                        id: "visit_purpose",
+                        data: "VISIT_PURPOSE",
+                        type: "text",
+                    }],
+                    /* selecting multiple rows will not work */
+                    select: 'single',
+                    /* altEditor at work */
+                    altEditor: true,
+                    responsive: true,
+                    /* buttons uses classes from bootstrap, see buttons page for more details */
+                    buttons: [
+                    {
+                        extend: 'selected',
+                        text: '<i class="fal fa-times mr-1"></i> Delete',
+                        name: 'delete',
+                        className: 'btn-primary btn-sm mr-1'
+                    },
+                    {
+                        extend: 'selected',
+                        text: '<i class="fal fa-edit mr-1"></i> Edit',
+                        name: 'edit',
+                        className: 'btn-primary btn-sm mr-1'
+                    },
+                    {
+                        text: '<i class="fal fa-plus mr-1"></i> Add',
+                        name: 'add',
+                        className: 'btn-success btn-sm mr-1'
+                    }],
+                    columnDefs: [],
+
+                    /* default callback for insertion: mock webservice, always success */
+                    onAddRow: function(dt, rowdata, success, error)
+                    {
+                        console.log("Missing AJAX configuration for INSERT");
+                        success(rowdata);
+                        
+                        redrawDataTable();
+
+                    },
+                    onEditRow: function(dt, rowdata, success, error)
+                    {
+                        console.log("Missing AJAX configuration for UPDATE");
+                        success(rowdata);
+                        
+                        redrawDataTable();
+
+                    },
+                    onDeleteRow: function(dt, rowdata, success, error)
+                    {
+                        console.log("Missing AJAX configuration for DELETE");
+                        success(rowdata);
+                        
+                        redrawDataTable();
+                    }
+                });
+
             });
+            
+            function redrawDataTable(){
+                setTimeout(function(){
+                    var table = $('#dt-visitor-table').DataTable();
+                    $('#container').css( 'display', 'block' );
+                    table.columns.adjust().draw();
+                },100);
+            }
+
 
         </script>
     </body>

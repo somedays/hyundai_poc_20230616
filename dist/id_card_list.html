@@ -556,7 +556,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                         
                         <div class="col-xl-12">
 
-                            <div class="panel">
+                                <div class="panel">
                                     <div class="panel-hdr">
                                         <h2>
                                             Requester <span class="fw-300"><i> </i></span>
@@ -567,7 +567,6 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                         <div class="panel-content p-0">
                                             <form class="needs-validation" novalidate>
                                                 <div class="panel-content">
-                                                
                                                     <div class="form-row">
                                                         <div class="col-md-4 mb-3">
                                                             <label class="form-label" for="simpleinput">NIK</label>
@@ -591,12 +590,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 
                                                         </div>
 
-                                                        <div class="col-md-4 mb-3">
-                                                            <label class="form-label" for="simpleinput">Phone</label>
-                                                            <span class="text-danger">*</span>
-                                                            <input type="tel" id="simpleinput" class="form-control" placeholder="01012341234" required>
-                                                        </div>
-
+                                                        
                                                     </div>
 
                                                     <div class="form-row">
@@ -627,10 +621,11 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                     </div>
                                 </div>
 
+                                
                                 <div class="panel">
                                     <div class="panel-hdr">
                                         <h2>
-                                            ID Card
+                                            ID Card <span class="fw-300"><i> </i></span>
                                         </h2>
                                     </div>
                                     <div class="panel-container show">
@@ -642,53 +637,56 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                         <div class="col-md-4 mb-3">
                                                             <label class="form-label" for="simpleinput">Working Area</label>
                                                             <select class="form-control" id="example-select">
-                                                                <option>MIC</option>
-                                                                <option>Press</option>                                                            
-                                                                <option>Body</option>
-                                                                <option>Paint</option>
-                                                                <option>Asembly</option>
+                                                                <option>Working Area 1</option>
+                                                                <option>Working Area 2</option>
+                                                                <option>Working Area 3</option>
+                                                                <option>Working Area 4</option>
+                                                                <option>Working Area 5</option>
                                                             </select>
                                                         </div>
 
                                                         <div class="col-md-4 mb-3">
-                                                            <label class="form-label" for="simpleinput">Type Request</label>
+                                                            <label class="form-label" for="simpleinput">Request Type</label>
                                                             <select class="form-control" id="example-select">
-                                                                <option>Baru</option>
-                                                                <option>Rusak</option>
-                                                                <option>Hilang</option>
+                                                                <option>baru</option>
+                                                                <option>rusak</option>
+                                                                <option>hilang</option>
                                                             </select>
                                                         </div>
-
                                                         <div class="col-md-4 mb-3">
-                                                            <label class="form-label" for="simpleinput">Request Item</label>
+                                                            <label class="form-label" for="simpleinput">Request item</label>
                                                             <select class="form-control" id="example-select">
-                                                                <option>Full Set</option>
-                                                                <option>ID card aja</option>
-                                                                <option>Lanyard aja</option>
+                                                                <option>Full set</option>
+                                                                <option>ID Card aja</option>
+                                                                <option>lanyard aja</option>
                                                             </select>
                                                         </div>
+                                                    </div>
 
+                                                    <div class="form-row">
                                                         <div class="col-md-12 mb-3">
-                                                            <label class="form-label" for="simpleinput">Description of post</label>
-                                                            <input type="text" id="simpleinput" class="form-control" placeholder="Fill description of post">
+                                                            <label class="form-label" for="example-textarea">Description of post</label>
+                                                        <textarea class="form-control" id="example-textarea" rows="5"></textarea>
                                                         </div>
-                                                        
+
                                                     </div>
 
                                                 </div>
                                             </form>
                                         </div>
 
-                                        <div class="panel-content border-faded border-left-0 border-right-0 border-bottom-0 d-flex flex-row">
-                                            <button class="btn btn-primary ml-auto waves-effect waves-themed" type="submit" id="btn_save">Save</button>
-                                        </div>
-
                                     </div>
                                 </div>
 
                             </div>
-                                       
+                        </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"> <i class="fal fa-times mr-1"></i> Close</button>
+                        <button type="button" class="btn btn-primary" id="btn_save"> <i class="fal fa-save mr-1"></i> Save </button>
+                        <button type="button" class="btn btn-primary" id="btn_edit"> <i class="fal fa-edit mr-1"></i> Edit </button>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -763,7 +761,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                             https://datatables.net/reference/option/dom
                             --------------------------------------
                          */
-                        "<'row mb-3'<'col-sm-12 col-md-6 d-flex align-items-center justify-content-start'f><'col-sm-12 col-md-6 d-flex align-items-center justify-content-end'B>>" +
+                        "<'row mb-3'<'col-sm-12 col-md-5 d-flex align-items-center justify-content-start'f><'col-sm-12 col-md-7 d-flex align-items-center justify-content-end'B>>" +
                         "<'row'<'col-sm-12'tr>>" +
                         "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
 
@@ -808,16 +806,16 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                             name: 'regist',
                             className: 'btn-success btn-sm mr-1',
                             action: function ( e, dt, node, config ) {
-                                // $('#default-example-modal-lg').modal('show');
-                                document.location.href = 'id_card_regist.html';
+                                $('#default-example-modal-lg').modal('show');
+                                //document.location.href = 'id_card_regist.html';
                             }
                         },{
                             text: '<i class="fal fa-edit mr-1"></i> Edit',
                             name: 'edit',
                             className: 'btn-success btn-sm mr-1',
                             action: function ( e, dt, node, config ) {
-                                //$('#default-example-modal-lg').modal('show');
-                                document.location.href = 'id_card_regist.html';
+                                $('#default-example-modal-lg').modal('show');
+                                //document.location.href = 'id_card_regist.html';
                             }
                         },
                         {
@@ -844,9 +842,6 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                       Swal.fire('Success.', '', 'success');
                                    // }
                                 });
-
-
-
 
                             }
                         },
@@ -875,13 +870,70 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                    //}
                                 });
 
+                            }
+                        },
+                        {
+                            text: '<i class="fal fa-save mr-1"></i> Approved',
+                            name: 'approved',
+                            className: 'btn-success btn-sm mr-1',
+                            action: function ( e, dt, node, config ) {
+                                
+                                Swal.fire({
+                                   title: 'Are you sure want to approve?',
+                                   text: '',
+                                   icon: 'warning',
+                                   
+                                   showCancelButton: true, // cancel버튼 보이기. 기본은 원래 없음
+                                   confirmButtonText: 'Approve', // confirm 버튼 텍스트 지정
+                                   cancelButtonText: 'Cancel', // cancel 버튼 텍스트 지정
+                                   
+                                   reverseButtons: true, // 버튼 순서 거꾸로
+                                   
+                                }).then(result => {
+                                   // 만약 Promise리턴을 받으면,
+                                   // if (result.isConfirmed) { // 만약 모달창에서 confirm 버튼을 눌렀다면
+                                   
+                                      Swal.fire('Success.', '', 'primary');
+                                   // }
+                                });
 
-
+                            }
+                        },
+                        {
+                            text: '<i class="fal fa-times mr-1"></i> Reject',
+                            name: 'reject',
+                            className: 'btn-success btn-sm mr-1',
+                            action: function ( e, dt, node, config ) {
+                                
+                                Swal.fire({
+                                   title: 'Are you sure want to reject?',
+                                   text: '',
+                                   icon: 'warning',
+                                   
+                                   showCancelButton: true, // cancel버튼 보이기. 기본은 원래 없음
+                                   confirmButtonText: 'Reject', // confirm 버튼 텍스트 지정
+                                   cancelButtonText: 'Cancel', // cancel 버튼 텍스트 지정
+                                   
+                                   reverseButtons: true, // 버튼 순서 거꾸로
+                                   
+                                }).then(result => {
+                                   // 만약 Promise리턴을 받으면,
+                                   // if (result.isConfirmed) { // 만약 모달창에서 confirm 버튼을 눌렀다면
+                                   
+                                      Swal.fire('Success.', '', 'success');
+                                   // }
+                                });
 
                             }
                         }
 
                     ]
+                });
+
+                // 더블클릭시 edit modal 오픈
+                $('#dt-basic-example').on('dblclick', 'tr', function () {
+                  // let name = $('td', this).eq(1).text();
+                    $('#default-example-modal-lg').modal('show');
                 });
 
             });

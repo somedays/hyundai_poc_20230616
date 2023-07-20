@@ -713,33 +713,34 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                     </div>
 
 
-                                                    <!-- 
+                                                    <!-- Approval only --> 
                                                     <div class="col-md-4 mb-3">
                                                         <label class="form-label" for="simpleinput">Process Status</label>
                                                         <input type="number" id="simpleinput" class="form-control" placeholder="">
                                                     </div>
 
+                                                    <!-- Approval only --> 
                                                     <div class="col-md-4 mb-3">
                                                         <label class="form-label" for="simpleinput">Application Date</label>
                                                         <input class="form-control" id="example-date" type="date" name="date" value="2023-07-23">
                                                     </div>
-                                                    -->
-
-
+                                                    
                                                 </div>
 
                                                 <div class="form-row">
-                                                  <!-- 
+                                                  
+                                                  <!-- Approval only --> 
                                                     <div class="col-md-4 mb-3">
                                                         <label class="form-label" for="simpleinput">Applicator ID No.</label>
                                                         <input type="number" id="simpleinput" class="form-control" placeholder="62200147">
                                                     </div>
 
+                                                    <!-- Approval only --> 
                                                     <div class="col-md-4 mb-3">
                                                         <label class="form-label" for="simpleinput">Applicator Name</label>
                                                         <input type="number" id="simpleinput" class="form-control" placeholder="Daniel">
                                                     </div>
-                                                    -->
+                                                    
                                                 </div>
 
                                                 <div class="form-row">
@@ -775,6 +776,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal"> <i class="fal fa-times mr-1"></i> Close</button>
                         <button type="button" class="btn btn-success" id="btn_save"> <i class="fal fa-save mr-1"></i> Save </button>
+                        <button type="button" class="btn btn-success" id="btn_edit"> <i class="fal fa-edit mr-1"></i> Edit </button>
 
                     </div>
                 </div>
@@ -845,7 +847,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                             https://datatables.net/reference/option/dom
                             --------------------------------------
                          */
-                        "<'row mb-3'<'col-sm-12 col-md-6 d-flex align-items-center justify-content-start'f><'col-sm-12 col-md-6 d-flex align-items-center justify-content-end'B>>" +
+                        "<'row mb-3'<'col-sm-12 col-md-5 d-flex align-items-center justify-content-start'f><'col-sm-12 col-md-7 d-flex align-items-center justify-content-end'B>>" +
                         "<'row'<'col-sm-12'tr>>" +
                         "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
 
@@ -899,16 +901,16 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                             name: 'regist',
                             className: 'btn-success btn-sm mr-1',
                             action: function ( e, dt, node, config ) {
-                                // $('#default-example-modal-lg').modal('show');
-                                document.location.href = "uniform_regist.html";
+                                $('#default-example-modal-lg').modal('show');
+                                //document.location.href = "uniform_regist.html";
                             }
                         },{
                             text: '<i class="fal fa-edit mr-1"></i> Edit',
                             name: 'edit',
                             className: 'btn-success btn-sm mr-1',
                             action: function ( e, dt, node, config ) {
-                                //$('#default-example-modal-lg').modal('show');
-                                document.location.href = "uniform_regist.html";
+                                $('#default-example-modal-lg').modal('show');
+                                //document.location.href = "uniform_regist.html";
                             }
                         },
                         {
@@ -967,6 +969,60 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                 });
 
                             }
+                        },
+                        {
+                            text: '<i class="fal fa-save mr-1"></i> Approved',
+                            name: 'approved',
+                            className: 'btn-success btn-sm mr-1',
+                            action: function ( e, dt, node, config ) {
+                                
+                                Swal.fire({
+                                   title: 'Are you sure want to approve?',
+                                   text: '',
+                                   icon: 'warning',
+                                   
+                                   showCancelButton: true, // cancel버튼 보이기. 기본은 원래 없음
+                                   confirmButtonText: 'Approve', // confirm 버튼 텍스트 지정
+                                   cancelButtonText: 'Cancel', // cancel 버튼 텍스트 지정
+                                   
+                                   reverseButtons: true, // 버튼 순서 거꾸로
+                                   
+                                }).then(result => {
+                                   // 만약 Promise리턴을 받으면,
+                                   // if (result.isConfirmed) { // 만약 모달창에서 confirm 버튼을 눌렀다면
+                                   
+                                      Swal.fire('Success.', '', 'primary');
+                                   // }
+                                });
+
+                            }
+                        },
+                        {
+                            text: '<i class="fal fa-times mr-1"></i> Reject',
+                            name: 'reject',
+                            className: 'btn-success btn-sm mr-1',
+                            action: function ( e, dt, node, config ) {
+                                
+                                Swal.fire({
+                                   title: 'Are you sure want to reject?',
+                                   text: '',
+                                   icon: 'warning',
+                                   
+                                   showCancelButton: true, // cancel버튼 보이기. 기본은 원래 없음
+                                   confirmButtonText: 'Reject', // confirm 버튼 텍스트 지정
+                                   cancelButtonText: 'Cancel', // cancel 버튼 텍스트 지정
+                                   
+                                   reverseButtons: true, // 버튼 순서 거꾸로
+                                   
+                                }).then(result => {
+                                   // 만약 Promise리턴을 받으면,
+                                   // if (result.isConfirmed) { // 만약 모달창에서 confirm 버튼을 눌렀다면
+                                   
+                                      Swal.fire('Success.', '', 'success');
+                                   // }
+                                });
+
+                            }
                         }
 
                     ]
@@ -980,7 +1036,13 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                     templates: {
                         leftArrow: '<i class="fal fa-angle-left" style="font-size: 1.25rem"></i>',
                         rightArrow: '<i class="fal fa-angle-right" style="font-size: 1.25rem"></i>'
-                    },
+                    }
+                });
+
+                // 더블클릭시 edit modal 오픈
+                $('#dt-basic-example').on('dblclick', 'tr', function () {
+                  // let name = $('td', this).eq(1).text();
+                    $('#default-example-modal-lg').modal('show');
                 });
 
             });
