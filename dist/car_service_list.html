@@ -563,7 +563,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                                 </div>
                                                                 <input type="text" class="form-control border-left-0 bg-transparent pl-0" placeholder="Daniel">
                                                                 <div class="input-group-append">
-                                                                    <button class="btn btn-default" type="button">Search</button>
+                                                                    <button id="btn_nik_search"  class="btn btn-default" type="button">Search</button>
                                                                 </div>
                                                             </div>
 
@@ -707,6 +707,9 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
         <!--This page contains the basic JS and CSS files to get started on your project. If you need aditional addon's or plugins please see scripts located at the bottom of each page in order to find out which JS/CSS files to add.-->
         <script src="js/datagrid/datatables/datatables.bundle.js"></script>
         <script src="js/notifications/sweetalert2/sweetalert2.bundle.js"></script>
+
+        <!-- common modal!!! -->
+        <script src="js/common-modal.js"></script>
 
         <script>
             /* demo scripts for change table color */
@@ -906,13 +909,15 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                    cancelButtonText: 'Cancel', // cancel 버튼 텍스트 지정
                                    
                                    reverseButtons: true, // 버튼 순서 거꾸로
+
+                                   title: 'Please enter the reason for rejection.',
+                                   input: 'textarea'
                                    
-                                }).then(result => {
-                                   // 만약 Promise리턴을 받으면,
-                                   // if (result.isConfirmed) { // 만약 모달창에서 confirm 버튼을 눌렀다면
                                    
-                                      Swal.fire('Success.', '', 'success');
-                                   // }
+                                }).then(function(result) {
+                                    if (result.value) {
+                                        Swal.fire('Success', result.value);
+                                    }
                                 });
 
                             }
