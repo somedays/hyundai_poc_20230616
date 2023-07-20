@@ -738,7 +738,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 
         <!-- common modal!!! -->
         <script src="js/common-modal.js"></script>
-        
+
 
         <script>
             /* demo scripts for change table color */
@@ -878,13 +878,15 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                    cancelButtonText: 'Cancel', // cancel 버튼 텍스트 지정
                                    
                                    reverseButtons: true, // 버튼 순서 거꾸로
+
+                                   title: 'Please enter the reason for rejection.',
+                                   input: 'textarea'
                                    
-                                }).then(result => {
-                                   // 만약 Promise리턴을 받으면,
-                                   // if (result.isConfirmed) { // 만약 모달창에서 confirm 버튼을 눌렀다면
                                    
-                                      Swal.fire('Success.', '', 'success');
-                                   // }
+                                }).then(function(result) {
+                                    if (result.value) {
+                                        Swal.fire('Success', result.value);
+                                    }
                                 });
 
 

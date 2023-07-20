@@ -850,12 +850,13 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                    
                                    reverseButtons: true, // 버튼 순서 거꾸로
                                    
-                                }).then(result => {
-                                   // 만약 Promise리턴을 받으면,
-                                   // if (result.isConfirmed) { // 만약 모달창에서 confirm 버튼을 눌렀다면
+                                   title: 'Please enter the reason for rejection.',
+                                   input: 'textarea'
                                    
-                                      Swal.fire('Success.', '', 'success');
-                                   // }
+                                }).then(function(result) {
+                                    if (result.value) {
+                                        Swal.fire('Success', result.value);
+                                    }
                                 });
 
 
