@@ -69,6 +69,61 @@ document.write('                                                            <td>
 document.write('                                                            <td>BS</td>');
 document.write('                                                            <td>Business Administrator</td>');
 document.write('                                                        </tr>');
+document.write('                                                        <tr>');
+document.write('                                                            <td>1</td>');
+document.write('                                                            <td>62200147</td>');
+document.write('                                                            <td>Daniel</td>');
+document.write('                                                            <td>Sr. Spec</td>');
+document.write('                                                            <td>BS</td>');
+document.write('                                                            <td>Business Administrator</td>');
+document.write('                                                        </tr>');
+document.write('                                                        <tr>');
+document.write('                                                            <td>2</td>');
+document.write('                                                            <td>62200147</td>');
+document.write('                                                            <td>Daniel</td>');
+document.write('                                                            <td>Sr. Spec</td>');
+document.write('                                                            <td>BS</td>');
+document.write('                                                            <td>Business Administrator</td>');
+document.write('                                                        </tr>');
+document.write('                                                        <tr>');
+document.write('                                                            <td>3</td>');
+document.write('                                                            <td>62200147</td>');
+document.write('                                                            <td>Daniel</td>');
+document.write('                                                            <td>Sr. Spec</td>');
+document.write('                                                            <td>BS</td>');
+document.write('                                                            <td>Business Administrator</td>');
+document.write('                                                        </tr>');document.write('                                                        <tr>');
+document.write('                                                            <td>1</td>');
+document.write('                                                            <td>62200147</td>');
+document.write('                                                            <td>Daniel</td>');
+document.write('                                                            <td>Sr. Spec</td>');
+document.write('                                                            <td>BS</td>');
+document.write('                                                            <td>Business Administrator</td>');
+document.write('                                                        </tr>');
+document.write('                                                        <tr>');
+document.write('                                                            <td>2</td>');
+document.write('                                                            <td>62200147</td>');
+document.write('                                                            <td>Daniel</td>');
+document.write('                                                            <td>Sr. Spec</td>');
+document.write('                                                            <td>BS</td>');
+document.write('                                                            <td>Business Administrator</td>');
+document.write('                                                        </tr>');
+document.write('                                                        <tr>');
+document.write('                                                            <td>3</td>');
+document.write('                                                            <td>62200147</td>');
+document.write('                                                            <td>Daniel</td>');
+document.write('                                                            <td>Sr. Spec</td>');
+document.write('                                                            <td>BS</td>');
+document.write('                                                            <td>Business Administrator</td>');
+document.write('                                                        </tr>');document.write('                                                        <tr>');
+document.write('                                                            <td>1</td>');
+document.write('                                                            <td>62200147</td>');
+document.write('                                                            <td>Daniel</td>');
+document.write('                                                            <td>Sr. Spec</td>');
+document.write('                                                            <td>BS</td>');
+document.write('                                                            <td>Business Administrator</td>');
+document.write('                                                        </tr>');
+
 document.write('                                                       ');
 document.write('                                                        ');
 document.write('                                                    </tbody>');
@@ -121,7 +176,7 @@ $(document).ready(function(){
                 https://datatables.net/reference/option/dom
                 --------------------------------------
              */
-            "<'row mb-3'<'col-sm-12 col-md-6 d-flex align-items-center justify-content-start'><'col-sm-12 col-md-6 d-flex align-items-center justify-content-end'B>>" +
+            "<'row mb-3'<'col-sm-12 col-md-6 d-flex align-items-center justify-content-start'f><'col-sm-12 col-md-6 d-flex align-items-center justify-content-end'B>>" +
             "<'row'<'col-sm-12'tr>>" +
             "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
 
