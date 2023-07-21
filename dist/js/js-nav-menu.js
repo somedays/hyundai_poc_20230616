@@ -7,9 +7,9 @@ document.write('    </a>');
 document.write('</li>');
 
 document.write('<li>');
-document.write('    <a href="#" title="Request List" data-filter-tags="font icons">');
+document.write('    <a href="#" title="BS Management" data-filter-tags="font icons">');
 document.write('        <i class="fal fa-list"></i>');
-document.write('        <span class="nav-link-text" data-i18n="nav.font_icons">Request List</span>');
+document.write('        <span class="nav-link-text" data-i18n="nav.font_icons">BS Management</span>');
 document.write('    </a>');
 document.write('    <ul>');
 document.write('        <li>');
@@ -101,7 +101,8 @@ document.write('            </ul>');
 document.write('        </li>');
 document.write('    </ul>');
 document.write('</li>');
-document.write('<li>');
+
+document.write('<li class="hide"> ');
 document.write('    <a href="#" title="Approval Management" >');
 document.write('        <i class="fal fa-tasks"></i>');
 document.write('        <span class="nav-link-text" data-i18n="nav.font_icons">Approval Management</span>');
