@@ -102,7 +102,7 @@ document.write('        </li>');
 document.write('    </ul>');
 document.write('</li>');
 
-document.write('<li class="hide"> ');
+document.write('<li  style="display:none;"> ');
 document.write('    <a href="#" title="Approval Management" >');
 document.write('        <i class="fal fa-tasks"></i>');
 document.write('        <span class="nav-link-text" data-i18n="nav.font_icons">Approval Management</span>');
