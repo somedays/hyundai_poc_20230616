@@ -23,18 +23,12 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
         <!-- base css -->
         <link id="vendorsbundle" rel="stylesheet" media="screen, print" href="css/vendors.bundle.css">
         <link id="appbundle" rel="stylesheet" media="screen, print" href="css/app.bundle.css">
-        <link id="mytheme" rel="stylesheet" media="screen, print" href="#">
         <link id="myskin" rel="stylesheet" media="screen, print" href="css/skins/skin-master.css">
+        <link id="myskin" rel="stylesheet" media="screen, print" href="css/style.css">
         <!-- Place favicon.ico in the root directory -->
         <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
         <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-        <!-- You can add your own stylesheet here to override any styles that comes before it
-		<link rel="stylesheet" media="screen, print" href="css/your_styles.css">-->
-
-        <link rel="stylesheet" media="screen, print" href="css/datagrid/datatables/datatables.bundle.css">
-        <link rel="stylesheet" media="screen, print" href="css/notifications/sweetalert2/sweetalert2.bundle.css">
-        <link rel="stylesheet" media="screen, print" href="css/formplugins/bootstrap-datepicker/bootstrap-datepicker.css">
 
     </head>
     <!-- BEGIN Body -->
@@ -62,19 +56,16 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 
 		>>> more settings are described inside documentation page >>>
 	-->
-    <body class="mod-skin-light nav-function-top ">
-        
+    <body class="mod-bg-1 mod-nav-link desktop chrome webkit pace-done header-function-fixed nav-function-fixed nav-function-top mod-skin-light blur">
         <!-- BEGIN Page Wrapper -->
         <div class="page-wrapper">
             <div class="page-inner">
                 <!-- BEGIN Left Aside -->
                 <aside class="page-sidebar">
                     <div class="page-logo">
-                        <a href="#" class="page-logo-link press-scale-down d-flex align-items-center position-relative" data-toggle="modal" data-target="#modal-shortcut">
+                        <a href="#" class="page-logo-link press-scale-down d-flex align-items-center position-relative">
                             <img src="img/logo.png" alt="SmartAdmin WebApp" aria-roledescription="logo">
                             <span class="page-logo-text mr-1">HYUNDAI</span>
-                            <span class="position-absolute text-white opacity-50 small pos-top pos-right mr-2 mt-n2"></span>
-                            <i class="fal fa-angle-down d-inline-block ml-1 fs-lg color-primary-300"></i>
                         </a>
                     </div>
                     <!-- BEGIN PRIMARY NAVIGATION -->
@@ -83,24 +74,9 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                             <div class="position-relative">
                                 <input type="text" id="nav_filter_input" placeholder="Filter menu" class="form-control" tabindex="0">
                                 <a href="#" onclick="return false;" class="btn-primary btn-search-close js-waves-off" data-action="toggle" data-class="list-filter-active" data-target=".page-sidebar">
-                                    <i class="fal fa-chevron-up"></i>
+                                    <i class="fal fa-chevron-down"></i>
                                 </a>
                             </div>
-                        </div>
-                        <div class="info-card">
-                            <img src="img/demo/avatars/avatar-admin.png" class="profile-image rounded-circle" alt="Dr. Codex Lantern">
-                            <div class="info-card-text">
-                                <a href="#" class="d-flex align-items-center text-white">
-                                    <span class="text-truncate text-truncate-sm d-inline-block">
-                                        Dr. Codex Lantern
-                                    </span>
-                                </a>
-                                <span class="d-inline-block text-truncate text-truncate-sm">Toronto, Canada</span>
-                            </div>
-                            <img src="img/card-backgrounds/cover-2-lg.png" class="cover" alt="cover">
-                            <a href="#" onclick="return false;" class="pull-trigger-btn" data-action="toggle" data-class="list-filter-active" data-target=".page-sidebar" data-focus="nav_filter_input">
-                                <i class="fal fa-angle-down"></i>
-                            </a>
                         </div>
                         <!-- 
 						TIP: The menu items are not auto translated. You must have a residing lang file associated with the menu saved inside dist/media/data with reference to each 'data-i18n' attribute.
@@ -113,30 +89,6 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                         <div class="filter-message js-filter-message bg-success-600"></div>
                     </nav>
                     <!-- END PRIMARY NAVIGATION -->
-                    <!-- NAV FOOTER -->
-                    <div class="nav-footer shadow-top">
-                        <a href="#" onclick="return false;" data-action="toggle" data-class="nav-function-minify" class="hidden-md-down">
-                            <i class="ni ni-chevron-right"></i>
-                            <i class="ni ni-chevron-right"></i>
-                        </a>
-                        <ul class="list-table m-auto nav-footer-buttons">
-                            <li>
-                                <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Chat logs">
-                                    <i class="fal fa-comments"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Support Chat">
-                                    <i class="fal fa-life-ring"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Make a call">
-                                    <i class="fal fa-phone"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div> <!-- END NAV FOOTER -->
                 </aside>
                 <!-- END Left Aside -->
                 <div class="page-content-wrapper">
@@ -147,8 +99,6 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                             <a href="#" class="page-logo-link press-scale-down d-flex align-items-center position-relative" >
                                 <img src="img/hyundai_logo.png" alt="SmartAdmin WebApp" aria-roledescription="logo">
                                 <span class="page-logo-text mr-1">HYUNDAI</span>
-                                <span class="position-absolute text-white opacity-50 small pos-top pos-right mr-2 mt-n2"></span>
-                                <i class="fal fa-angle-down d-inline-block ml-1 fs-lg color-primary-300"></i>
                             </a>
                         </div>
                         <!-- DOC: nav menu layout change shortcut -->
@@ -210,9 +160,9 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                         </div>
                                     </div>
                                     <div class="dropdown-divider m-0"></div>
-                                    <!-- <a href="#" class="dropdown-item" data-action="app-reset">
+                                    <a href="#" class="dropdown-item" data-action="app-reset">
                                         <span data-i18n="drpdwn.reset_layout">Reset Layout</span>
-                                    </a> -->
+                                    </a>
                                     <!-- <a href="#" class="dropdown-item" data-toggle="modal" data-target=".js-modal-settings">
                                         <span data-i18n="drpdwn.settings">Settings</span>
                                     </a> -->
@@ -225,19 +175,6 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                         <span data-i18n="drpdwn.print">Print</span>
                                         <i class="float-right text-muted fw-n">Ctrl + P</i>
                                     </a>
-                                    <!-- <div class="dropdown-multilevel dropdown-multilevel-left">
-                                        <div class="dropdown-item">
-                                            Language
-                                        </div>
-                                        <div class="dropdown-menu">
-                                            <a href="#?lang=fr" class="dropdown-item" data-action="lang" data-lang="fr">Français</a>
-                                            <a href="#?lang=en" class="dropdown-item active" data-action="lang" data-lang="en">English (US)</a>
-                                            <a href="#?lang=es" class="dropdown-item" data-action="lang" data-lang="es">Español</a>
-                                            <a href="#?lang=ru" class="dropdown-item" data-action="lang" data-lang="ru">Русский язык</a>
-                                            <a href="#?lang=jp" class="dropdown-item" data-action="lang" data-lang="jp">日本語</a>
-                                            <a href="#?lang=ch" class="dropdown-item" data-action="lang" data-lang="ch">中文</a>
-                                        </div>
-                                    </div> -->
                                     <div class="dropdown-divider m-0"></div>
                                     <a class="dropdown-item fw-500 pt-3 pb-3" href="#">
                                         <span data-i18n="drpdwn.page-logout">Logout</span>
@@ -251,72 +188,256 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                     <!-- BEGIN Page Content -->
                     <!-- the #js-page-content id is needed for some plugins to initialize -->
                     <main id="js-page-content" role="main" class="page-content">
-                        <ol class="breadcrumb page-breadcrumb">
-                            <!-- <li class="breadcrumb-item"><a href="javascript:void(0);"></a></li> -->
-                            <li class="breadcrumb-item active">Request Registration</li>
-                            <!-- <li class="position-absolute pos-top pos-right d-none d-sm-block"><span class="js-get-date"></span></li> -->
-                        </ol>
-                        <div class="subheader">
-                            <h1 class="subheader-title">
-                                <i class='subheader-icon fal fa-list'></i> Request Registration
-                                <!-- <small>
-                                    Insert page description or punch line
-                                </small> -->
-                            </h1>
-                            <!-- 
-		Right content on content header
-		A nice area to add graphs or buttons -->
-                            <!-- <div class="subheader-block">
-                                Right Subheader Block
-                            </div> -->
-                        </div>
-
                         <!-- Your main content goes below here: -->
                         <div class="row">
-
-                            <div class="col-lg-4 sortable-grid ui-sortable">
-                                
-                                <div id="panel-1" class="panel">
-                                    <div class="panel-hdr">
-                                        <h2>
-                                            Default <span class="fw-300"><i>Panel</i></span>
-                                        </h2>
-                                    </div>
-                                    <div class="panel-container show">
-                                        <div class="panel-content">
-                                            <div class="panel-tag">
-                                                All panels needs to have an unique ID in order to use the panel funtions. <code>.panel</code> is a container with no padding, <code>.panel-hdr</code> has a <code>min-height</code> value and default <code>flexbox</code> properties. The <code>.panel-toolbar</code> is inserted into <code>.panel-hdr</code> for extra elements. The <code>.panel-container</code> wraps <code>.panel-content</code> which has a predefined padding.
+                            <div class="col-lg-3">
+                                <div class="main-panel-rbs">
+                                    <div class="main-rbs-step1">
+                                        <div class="panel-head padding-left">
+                                            <div>Request Business Supporting</div>
+                                            <a><i class="fal fa-pencil-alt"></i></a>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="step-tt">
+                                                <span>01</span>
+                                                <strong>Please select the Request Type</strong>
                                             </div>
-                                            <p>
-                                                Default panel text.
-                                            </p>
+                                            <div class="step-select">
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" class="custom-control-input" id="step1radio01" name="step1radio">
+                                                    <label class="custom-control-label" for="step1radio01">Uniform</label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" class="custom-control-input" id="step1radio02" name="step1radio">
+                                                    <label class="custom-control-label" for="step1radio02">Car Operational</label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" class="custom-control-input" id="step1radio03" name="step1radio">
+                                                    <label class="custom-control-label" for="step1radio03">Car Service</label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" class="custom-control-input" id="step1radio04" name="step1radio">
+                                                    <label class="custom-control-label" for="step1radio04">Courier Service</label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" class="custom-control-input" id="step1radio05" name="step1radio">
+                                                    <label class="custom-control-label" for="step1radio05">Security Entry Permit</label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" class="custom-control-input" id="step1radio06" name="step1radio">
+                                                    <label class="custom-control-label" for="step1radio06">Business Card</label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" class="custom-control-input" id="step1radio07" name="step1radio">
+                                                    <label class="custom-control-label" for="step1radio07">ID Card</label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" class="custom-control-input" id="step1radio08" name="step1radio">
+                                                    <label class="custom-control-label" for="step1radio08">Shuttle Bus</label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" class="custom-control-input" id="step1radio09" name="step1radio">
+                                                    <label class="custom-control-label" for="step1radio09">Meal request (canteen)</label>
+                                                </div>
+                                            </div>
+                                            <div class="panel-footer">
+                                                <button type="button" onclick="$('.main-rbs-step1').hide();$('.main-rbs-step2').show();" class="btn btn-primary waves-effect waves-themed">Next</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-rbs-step2" style="display:none;">
+                                        <div class="panel-head padding-right">
+                                            <a><i class="fal fa-home"></i></a>
+                                            <div>Request Business Supporting</div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="step-tt">
+                                                <span>02</span>
+                                                <strong>Select t eam of acceptance</strong>
+                                            </div>
+                                            <div class="step2-form">
+                                                <div class="btn-group" role="group">
+                                                    <button type="button" class="btn btn-secondary waves-effect waves-themed">Recently Requested Service</button>
+                                                    <button type="button" class="btn btn-secondary waves-effect waves-themed">Recently Requested Ticket</button>
+                                                </div>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">Search Service</span>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="Car Service">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-default waves-effect waves-themed" type="button"><i class="fal fa-search"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">Search Detail</span>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="Car Service">
+                                                </div>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <label class="input-group-text" for="inputGroupSelect01">Team Acceptation <span class="text-danger">*</span></label>
+                                                    </div>
+                                                    <select class="custom-select" id="inputGroupSelect01">
+                                                        <option selected="">Business Support</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <label class="input-group-text" for="inputGroupSelect02">Section Acceptation <span class="text-danger">*</span></label>
+                                                    </div>
+                                                    <select class="custom-select" id="inputGroupSelect02">
+                                                        <option selected="">Operating Support</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="input-guide-text"><span class="text-danger">*</span> <span>please enter the mandatory field</span></div>
+                                            </div>
+                                            <div class="panel-footer">
+                                                <div class="btn-group" role="group">
+                                                    <button type="button" onclick="$('.main-rbs-step2').hide();$('.main-rbs-step1').show();" class="btn btn-secondary waves-effect waves-themed">Previous</button>
+                                                    <button type="button" onclick="$('.main-rbs-step2').hide();$('.main-rbs-step1').show();" class="btn btn-primary waves-effect waves-themed">Next</button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-
-
                             </div>
-
-                            <div class="col-lg-8 sortable-grid ui-sortable">
-                                <div id="panel-1" class="panel">
-                                    <div class="panel-hdr">
-                                        <h2>
-                                            Default <span class="fw-300"><i>Panel</i></span>
-                                        </h2>
-                                    </div>
-                                    <div class="panel-container show">
-                                        <div class="panel-content">
-                                            <div class="panel-tag">
-                                                All panels needs to have an unique ID in order to use the panel funtions. <code>.panel</code> is a container with no padding, <code>.panel-hdr</code> has a <code>min-height</code> value and default <code>flexbox</code> properties. The <code>.panel-toolbar</code> is inserted into <code>.panel-hdr</code> for extra elements. The <code>.panel-container</code> wraps <code>.panel-content</code> which has a predefined padding.
+                            <div class="col-lg-6 sortable-grid ui-sortable">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="row main-panel-mwm">
+                                            <div class="col-lg-4 mr">
+                                                <div class="panel-head">
+                                                    <strong>My Request</strong>
+                                                    <i class="fal fa-file-import"></i>
+                                                    <a><i class="fal fa-plus"></i></a>
+                                                </div>
+                                                <div class="panel-count">
+                                                    <div class="count-item">
+                                                        <span>New(befor acceptance)</span>
+                                                        <strong>0</strong>
+                                                    </div>
+                                                    <div class="count-item">
+                                                        <span>In Progress</span>
+                                                        <strong>0</strong>
+                                                    </div>
+                                                    <div class="count-item">
+                                                        <span>Resolved</span>
+                                                        <strong>0</strong>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <p>
-                                                Default panel text.
-                                            </p>
+                                            <div class="col-lg-4 wma">
+                                                <div class="panel-head">
+                                                    <strong>Wait My Approval</strong>
+                                                    <i class="fal fa-file-signature"></i>
+                                                    <a><i class="fal fa-plus"></i></a>
+                                                </div>
+                                                <div class="panel-count">
+                                                    <div class="count-item">
+                                                        <span>Approve SR</span>
+                                                        <strong>0</strong>
+                                                    </div>
+                                                    <div class="count-item">
+                                                        <span>Request for changing target date / UAT</span>
+                                                        <strong>0</strong>
+                                                    </div>
+                                                    <div class="count-item">
+                                                        <span>Approve SR (Review)</span>
+                                                        <strong>0</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 msas">
+                                                <div class="panel-head">
+                                                    <strong>My SR's apprival status</strong>
+                                                    <i class="fal fa-business-time"></i>
+                                                    <a><i class="fal fa-plus"></i></a>
+                                                </div>
+                                                <div class="panel-count">
+                                                    <div class="count-item">
+                                                        <span>New</span>
+                                                        <strong>0</strong>
+                                                    </div>
+                                                    <div class="count-item">
+                                                        <span>In Progress</span>
+                                                        <strong>0</strong>
+                                                    </div>
+                                                    <div class="count-item">
+                                                        <span>Resolved</span>
+                                                        <strong>0</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div id="panel-1" class="panel">
+                                            <div class="panel-hdr">
+                                                <h2>Notice</h2>
+                                                <div class="panel-toolbar">
+                                                    <button class="btn btn-panel bg-transparent fs-xl w-auto h-auto rounded-0 waves-effect waves-themed"><i class="fal fa-plus"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="panel-container show">
+                                                <div class="panel-content">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div id="panel-1" class="panel">
+                                            <div class="panel-hdr">
+                                                <h2>FAQ</h2>
+                                                <div class="panel-toolbar">
+                                                    <button class="btn btn-panel bg-transparent fs-xl w-auto h-auto rounded-0 waves-effect waves-themed"><i class="fal fa-plus"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="panel-container show">
+                                                <div class="panel-content">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             
+                            <div class="col-lg-3 sortable-grid ui-sortable">
+                                <div id="panel-1" class="panel">
+                                    <div class="panel-hdr">
+                                        <h2>Received message</h2>
+                                        <div class="panel-toolbar">
+                                            <button class="btn btn-panel bg-transparent fs-xl w-auto h-auto rounded-0 waves-effect waves-themed"><i class="fal fa-comment-dots"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="panel-container show">
+                                        <div class="panel-content">
+                                            <div class="bg-transparent">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="alert-icon">
+                                                        <span class="icon-stack icon-stack-md">
+                                                            <i class="base-7 icon-stack-3x"></i>
+                                                            <i class="fal fa-comment-alt-slash icon-stack-1x text-white"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="flex-1">
+                                                        <span class="h6">No Message</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </main>
                     <!-- this overlay is activated only when mobile menu is triggered -->

@@ -1,0 +1,261 @@
+/* Navigation */
+.primary-nav > a {
+    display:none !important;
+}
+
+.main-panel-rbs {
+    display: flex;
+    flex-direction: column;
+	position: relative;
+	background-color: #fff;
+	box-shadow:0px 0px 13px 0px rgba(62, 44, 90, 0.08);
+	margin-bottom: 1.5rem;
+	border-radius: 4px;
+	border: 1px solid rgba(0, 0, 0, 0.09);
+	border-bottom: 1px solid #e0e0e0;
+	transition : border 500ms ease-out;
+}
+
+.main-panel-rbs .panel-head {
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #fff;
+    min-height: 3rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    border-radius: 4px 4px 0 0;
+    -webkit-transition: background-color 0.4s ease-out;
+    transition: background-color 0.4s ease-out;
+}
+
+.main-panel-rbs .panel-head.padding-left {
+    padding-left: 1rem;
+}
+
+.main-panel-rbs .panel-head.padding-right {
+    padding-right: 1rem;
+}
+
+.main-panel-rbs .panel-head > div {
+    flex: 1;
+    font-size: 0.875rem;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: 3rem;
+    color: inherit;
+    color: #333;
+    position: relative;
+    font-weight: 500;
+}
+
+.main-panel-rbs .panel-head > a {
+    display:block;
+    width:3rem;
+    cursor:pointer;
+    text-align:center;
+    font-size:16px;
+}
+
+.main-panel-rbs .panel-head > a:hover {
+    color:#2198F3;
+}
+
+.main-panel-rbs .panel-body {
+    padding:1rem;
+}
+
+.main-panel-rbs .step-tt {
+    display:flex;
+    align-items: center;
+}
+
+.main-panel-rbs .step-tt span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1rem;
+    text-align:center;
+    flex:0;
+    justify-content: center;
+    margin-right:.5rem;
+}
+.main-panel-rbs .step-tt span:after {
+    content:"STEP";
+    display:block;
+    font-size:.5rem;
+    border-top: 1px solid #aaa;
+    margin-top: .1rem;
+    color: #aaa;
+    line-height: 1rem;
+}
+
+.main-panel-rbs .step-tt strong {
+    font-size:0.875rem;
+}
+
+.main-panel-rbs .step-select {
+    padding:1rem 0;
+}
+
+.main-panel-rbs .step-select .custom-control {
+    height:1.8rem;
+}
+
+.main-panel-rbs .step-select .custom-control label {
+    cursor:pointer;
+}
+
+.main-panel-rbs .panel-footer {
+    display:flex;
+}
+.main-panel-rbs .panel-footer .btn {
+    flex:1;
+}
+
+.main-panel-rbs .step2-form .btn-group {
+    margin:.5rem 0 0 0;
+}
+
+.main-panel-rbs .step2-form .btn-group .btn {
+    font-size: 0.72rem;
+    line-height: 0.85rem;
+}
+
+.main-panel-rbs .input-group {
+    margin:.5rem 0;
+}
+
+.main-panel-rbs .input-group .input-group-prepend {
+    flex: 0 0 6rem;
+}
+
+.main-panel-rbs .input-group .input-group-text {
+    white-space:normal;
+    font-size: 0.7rem;
+    line-height: .6rem;
+    text-align: left;
+}
+
+.main-panel-rbs .input-group .custom-select {
+    border: 1px solid #E5E5E5;
+}
+
+.main-panel-rbs .btn-group {
+    display:flex;
+    flex:1;
+}
+
+.main-panel-rbs .input-guide-text {
+    margin:0 0 1rem 0;
+    text-align: right;
+    font-size:0.75rem;
+}
+
+.main-panel-mwm {
+    display: flex;
+	margin:0 0 1.5rem 0;
+	border-radius: 4px;
+	border: 1px solid rgba(0, 0, 0, 0.09);
+	border-bottom: 1px solid #e0e0e0;
+	transition : border 500ms ease-out;
+	box-shadow:0px 0px 13px 0px rgba(62, 44, 90, 0.08);
+	color:#333;
+}
+
+.main-panel-mwm .col-lg-4 {
+    padding:0;
+}
+
+.main-panel-mwm .col-lg-4.mr {
+    background-color:#aeceec;
+}
+.main-panel-mwm .col-lg-4.wma {
+    background-color:#a9e2d2;
+}
+.main-panel-mwm .col-lg-4.msas {
+    background-color:#fae088;
+}
+
+.main-panel-mwm .panel-head {
+	display:flex;
+    padding: 1rem;
+	align-items: center;
+    position:relative;
+    height: 8rem;
+}
+
+.main-panel-mwm .panel-head strong {
+	flex:0 0 7rem;
+	font-size:1rem;
+	color:#333;
+}
+
+.main-panel-mwm .col-lg-4:nth-child(1) .panel-head strong,
+.main-panel-mwm .col-lg-4:nth-child(1) .panel-count .count-item strong {
+    color:#064481;
+}
+.main-panel-mwm .col-lg-4:nth-child(2) .panel-head strong,
+.main-panel-mwm .col-lg-4:nth-child(2) .panel-count .count-item strong {
+    color:#038491;
+}
+.main-panel-mwm .col-lg-4:nth-child(3) .panel-head strong,
+.main-panel-mwm .col-lg-4:nth-child(3) .panel-count .count-item strong {
+    color:#7d6007;
+}
+
+.main-panel-mwm .panel-head > i {
+	flex:1;
+	text-align:center;
+	font-size:3rem;
+	color:#FFF;
+    opacity: 0.7;
+}
+
+.main-panel-mwm .panel-head a {
+    position:absolute;
+    top:0;
+    right:0;
+    width:1.6rem;
+    height:1.6rem;
+    line-height:1.6rem;
+    text-align:center;
+    border-radius:0 0 0 50%;
+    background:rgba(0,0,0,0.1);
+    cursor:pointer;
+}
+
+.main-panel-mwm .panel-head a > i {
+    font-size:0.725rem;
+    color:#fff;
+}
+
+.main-panel-mwm .panel-count .count-item {
+    display: flex;
+    height:4rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.main-panel-mwm .panel-count .count-item span {
+	font-weight: 500;
+	flex: 0 0 8rem;
+}
+
+.main-panel-mwm .panel-count .count-item strong {
+	font-size:1.6rem;
+	font-weight:500;
+}
+
+.main-panel-mwm .panel-count .count-item:nth-child(1) {
+    background-color:rgba(255,255,255,0.3);
+}
+.main-panel-mwm .panel-count .count-item:nth-child(2) {
+    background-color:rgba(255,255,255,0.15);
+}
